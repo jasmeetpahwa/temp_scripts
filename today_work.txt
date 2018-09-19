@@ -1,0 +1,2 @@
+today's work:-
+updated manual script for schema_setup.sql

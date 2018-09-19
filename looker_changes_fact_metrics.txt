@@ -1,0 +1,912 @@
+fact_metric_changes:- 
+
+
+measure: vehicle_sales {
+    label: vehicle_sales
+    type: number
+    value_format_name: decimal_0
+    sql:  sum(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.vehicle_sales_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.vehicle_sales_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.vehicle_sales_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.vehicle_sales_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.vehicle_sales_division
+                        END
+             END) ;;
+  }
+
+measure: mechanical_sales {
+    label: mechanical_sales
+    type: number
+    value_format_name: decimal_0
+    sql:  sum(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.mechanical_sales_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.mechanical_sales_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.mechanical_sales_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.mechanical_sales_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.mechanical_sales_division
+                        END
+             END) ;;
+  }
+
+measure: maintenance_sales {
+    label: maintenance_sales
+    type: number
+    value_format_name: decimal_0
+    sql:  sum(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.maintenance_sales_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.maintenance_sales_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.maintenance_sales_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.maintenance_sales_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.maintenance_sales_division
+                        END
+             END) ;;
+  }
+
+measure: cpo_sales {
+    label: cpo_sales
+    type: number
+    value_format_name: decimal_0
+    sql:  sum(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.cpo_sales_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.cpo_sales_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.cpo_sales_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.cpo_sales_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.cpo_sales_division
+                        END
+             END) ;;
+  }
+
+measure: total_sales_security {
+    label: total_sales_security
+    type: number
+    value_format_name: decimal_0
+    sql:  sum(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.total_sales_security_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.total_sales_security_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.total_sales_security_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.total_sales_security_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.total_sales_security_division
+                        END
+             END) ;;
+  }
+
+measure: mechanical_penetration_pct {
+    label: mechanical_penetration_pct
+    type: number
+    value_format_name: percent_2
+    sql:  sum(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.mechanical_penetration_pct_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.mechanical_penetration_pct_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.mechanical_penetration_pct_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.mechanical_penetration_pct_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.mechanical_penetration_pct_division
+                        END
+             END) ;;
+  }
+
+measure: maintenance_penetration_pct {
+    label: maintenance_penetration_pct
+    type: number
+    value_format_name: percent_2
+    sql:  sum(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.maintenance_penetration_pct_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.maintenance_penetration_pct_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.maintenance_penetration_pct_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.maintenance_penetration_pct_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.maintenance_penetration_pct_division
+                        END
+             END) ;;
+  }
+
+measure: cpo_penetration_pct {
+    label: cpo_penetration_pct
+    type: number
+    value_format_name: percent_2
+    sql:  sum(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.cpo_penetration_pct_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.cpo_penetration_pct_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.cpo_penetration_pct_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.cpo_penetration_pct_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.cpo_penetration_pct_division
+                        END
+             END) ;;
+  }
+
+measure: mech_cpo_pen_pct {
+    label: mech_cpo_pen_pct
+    type: number
+    value_format_name: percent_2
+    sql:  avg(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.mech_cpo_pen_pct_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.mech_cpo_pen_pct_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.mech_cpo_pen_pct_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.mech_cpo_pen_pct_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.mech_cpo_pen_pct_division
+                        END
+             END) ;;
+  }
+
+measure: mech_cpo_pen_pct_obj {
+    label: mech_cpo_pen_pct_obj
+    type: number
+    value_format_name: percent_2
+    sql:  avg(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.mech_cpo_pen_pct_obj_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.mech_cpo_pen_pct_obj_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.mech_cpo_pen_pct_obj_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.mech_cpo_pen_pct_obj_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.mech_cpo_pen_pct_obj_division
+                        END
+             END) ;;
+  }
+
+measure: saf_new_accruals {
+    label: saf_new_accruals
+    type: number
+    value_format_name: usd_2
+    sql:  sum(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.saf_new_accruals_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.saf_new_accruals_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.saf_new_accruals_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.saf_new_accruals_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.saf_new_accruals_division
+                        END
+             END) ;;
+  }
+
+measure: saf_new_expired {
+    label: saf_new_expired
+    type: number
+    value_format_name: usd_2
+    sql:  sum(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.saf_new_expired_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.saf_new_expired_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.saf_new_expired_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.saf_new_expired_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.saf_new_expired_division
+                        END
+             END) ;;
+  }
+
+measure: saf_new_utilization {
+    label: saf_new_utilization
+    type: number
+    value_format_name: percent_2
+    sql:  avg(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.saf_new_utilization_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.saf_new_utilization_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.saf_new_utilization_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.saf_new_utilization_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.saf_new_utilization_division
+                        END
+             END) ;;
+  }
+
+measure: saf_ps_accruals {
+    label: saf_ps_accruals
+    type: number
+    value_format_name: usd_2
+    sql:  sum(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.saf_ps_accruals_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.saf_ps_accruals_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.saf_ps_accruals_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.saf_ps_accruals_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.saf_ps_accruals_division
+                        END
+             END) ;;
+  }
+
+measure: saf_ps_expired {
+    label: saf_ps_expired
+    type: number
+    value_format_name: usd_2
+    sql:  sum(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.saf_ps_expired_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.saf_ps_expired_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.saf_ps_expired_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.saf_ps_expired_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.saf_ps_expired_division
+                        END
+             END) ;;
+  }
+
+measure: saf_ps_utilization {
+    label: saf_ps_utilization
+    type: number
+    value_format_name: percent_2
+    sql:  avg(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.saf_ps_utilization_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.saf_ps_utilization_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.saf_ps_utilization_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.saf_ps_utilization_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.saf_ps_utilization_division
+                        END
+             END) ;;
+  }
+
+measure: saf_flex_accruals {
+    label: saf_flex_accruals
+    type: number
+    value_format_name: usd_2
+    sql:  sum(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.saf_flex_accruals_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.saf_flex_accruals_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.saf_flex_accruals_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.saf_flex_accruals_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.saf_flex_accruals_division
+                        END
+             END) ;;
+  }
+
+measure: saf_flex_expired {
+    label: saf_flex_expired
+    type: number
+    value_format_name: usd_2
+    sql:  sum(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.saf_flex_expired_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.saf_flex_expired_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.saf_flex_expired_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.saf_flex_expired_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.saf_flex_expired_division
+                        END
+             END) ;;
+  }
+
+measure: saf_flex_utilization {
+    label: saf_flex_utilization
+    type: number
+    value_format_name: percent_2
+    sql:  avg(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.saf_flex_utilization_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.saf_flex_utilization_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.saf_flex_utilization_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.saf_flex_utilization_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.saf_flex_utilization_division
+                        END
+             END) ;;
+  }
+
+measure: saf_total_accruals {
+    label: saf_total_accruals
+    type: number
+    value_format_name: usd_2
+    sql:  sum(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.saf_total_accruals_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.saf_total_accruals_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.saf_total_accruals_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.saf_total_accruals_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.saf_total_accruals_division
+                        END
+             END) ;;
+  }
+
+measure: saf_total_expired {
+    label: saf_total_expired
+    type: number
+    value_format_name: usd_2
+    sql:  sum(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.saf_total_expired_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.saf_total_expired_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.saf_total_expired_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.saf_total_expired_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.saf_total_expired_division
+                        END
+             END) ;;
+  }
+
+measure: saf_total_utilization {
+    label: saf_total_utilization
+    type: number
+    value_format_name: percent_2
+    sql:  avg(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.saf_total_utilization_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.saf_total_utilization_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.saf_total_utilization_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.saf_total_utilization_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.saf_total_utilization_division
+                        END
+             END) ;;
+  }
+
+measure: saf_care_connect_spend {
+    label: saf_care_connect_spend
+    type: number
+    value_format_name: usd_2
+    sql:  sum(CASE
+               WHEN ${dim_period.period_type} = 'Current'
+                   THEN CASE
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Entity'
+                                THEN ${TABLE}.saf_care_connect_spend_entity
+                            WHEN ${dim_entity.hierarchy_level_name} = 'District'
+                                THEN ${TABLE}.saf_care_connect_spend_district
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Zone'
+                                THEN ${TABLE}.saf_care_connect_spend_zone
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Region'
+                                THEN ${TABLE}.saf_care_connect_spend_region
+                            WHEN ${dim_entity.hierarchy_level_name} = 'Division'
+                                THEN ${TABLE}.saf_care_connect_spend_division
+                        END
+             END) ;;
+  }
+
+
+
+
+comparision:-
+
+measure: vehicle_sales_comparision {
+    label:"vehicle_sales_comparison"
+    type: number
+    value_format_name: decimal_0 
+    sql: sum({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.vehicle_sales}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+measure: mechanical_sales_comparision {
+    label:"mechanical_sales_comparison"
+    type: number
+    value_format_name: decimal_0 
+    sql: sum({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.mechanical_sales}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+measure: maintenance_sales_comparision {
+    label:"maintenance_sales_comparison"
+    type: number
+    value_format_name: decimal_0 
+    sql: sum({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.maintenance_sales}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+measure: cpo_sales_comparision {
+    label:"cpo_sales_comparison"
+    type: number
+    value_format_name: decimal_0 
+    sql: sum({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.cpo_sales}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+measure: total_sales_security_comparision {
+    label:"total_sales_security_comparison"
+    type: number
+    value_format_name: decimal_0 
+    sql: sum({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.total_sales_security}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+measure: mechanical_penetration_pct_comparision {
+    label:"mechanical_penetration_pct_comparison"
+    type: number
+    value_format_name: percent_2 
+    sql: sum({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.mechanical_penetration_pct}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+measure: maintenance_penetration_pct_comparision {
+    label:"maintenance_penetration_pct_comparison"
+    type: number
+    value_format_name: percent_2 
+    sql: sum({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.maintenance_penetration_pct}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+measure: cpo_penetration_pct_comparision {
+    label:"cpo_penetration_pct_comparison"
+    type: number
+    value_format_name: percent_2 
+    sql: sum({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.cpo_penetration_pct}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+measure: mech_cpo_pen_pct_comparision {
+    label:"mech_cpo_pen_pct_comparison"
+    type: number
+    value_format_name: percent_2 
+    sql: avg({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.mech_cpo_pen_pct}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+measure: mech_cpo_pen_pct_obj_comparision {
+    label:"mech_cpo_pen_pct_obj_comparison"
+    type: number
+    value_format_name: percent_2 
+    sql: avg({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.mech_cpo_pen_pct_obj}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+measure: saf_new_accruals_comparision {
+    label:"saf_new_accruals_comparison"
+    type: number
+    value_format_name: usd_2 
+    sql: sum({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.saf_new_accruals}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+measure: saf_new_expired_comparision {
+    label:"saf_new_expired_comparison"
+    type: number
+    value_format_name: usd_2 
+    sql: sum({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.saf_new_expired}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+measure: saf_new_utilization_comparision {
+    label:"saf_new_utilization_comparison"
+    type: number
+    value_format_name: percent_2 
+    sql: avg({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.saf_new_utilization}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+measure: saf_ps_accruals_comparision {
+    label:"saf_ps_accruals_comparison"
+    type: number
+    value_format_name: usd_2 
+    sql: sum({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.saf_ps_accruals}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+measure: saf_ps_expired_comparision {
+    label:"saf_ps_expired_comparison"
+    type: number
+    value_format_name: usd_2 
+    sql: sum({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.saf_ps_expired}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+measure: saf_ps_utilization_comparision {
+    label:"saf_ps_utilization_comparison"
+    type: number
+    value_format_name: percent_2 
+    sql: avg({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.saf_ps_utilization}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+measure: saf_flex_accruals_comparision {
+    label:"saf_flex_accruals_comparison"
+    type: number
+    value_format_name: usd_2 
+    sql: sum({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.saf_flex_accruals}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+measure: saf_flex_expired_comparision {
+    label:"saf_flex_expired_comparison"
+    type: number
+    value_format_name: usd_2 
+    sql: sum({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.saf_flex_expired}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+measure: saf_flex_utilization_comparision {
+    label:"saf_flex_utilization_comparison"
+    type: number
+    value_format_name: percent_2 
+    sql: avg({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.saf_flex_utilization}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+measure: saf_total_accruals_comparision {
+    label:"saf_total_accruals_comparison"
+    type: number
+    value_format_name: usd_2 
+    sql: sum({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.saf_total_accruals}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+measure: saf_total_expired_comparision {
+    label:"saf_total_expired_comparison"
+    type: number
+    value_format_name: usd_2 
+    sql: sum({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.saf_total_expired}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+measure: saf_total_utilization_comparision {
+    label:"saf_total_utilization_comparison"
+    type: number
+    value_format_name: percent_2 
+    sql: avg({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.saf_total_utilization}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+measure: saf_care_connect_spend_comparision {
+    label:"saf_care_connect_spend_comparison"
+    type: number
+    value_format_name: usd_2 
+    sql: sum({% if dataset_comparison._parameter_value == Actual %}
+                  ${fact_metrics_agg.saf_care_connect_spend}
+              {% elsif dataset_comparison._parameter_value == Target %}
+                  NULL::NUMERIC
+              {% endif %}) ;;
+  }
+
+
+
+
+last_update:- 
+
+measure: VEHICLE_SALES_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+measure: MECHANICAL_SALES_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+measure: MAINTENANCE_SALES_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+measure: CPO_SALES_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+measure: TOTAL_SALES_SECURITY_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+measure: MECHANICAL_PENETRATION_PCT_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+measure: MAINTENANCE_PENETRATION_PCT_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+measure: CPO_PENETRATION_PCT_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+measure: MECH_CPO_PEN_PCT_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+measure: MECH_CPO_PEN_PCT_OBJ_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+measure: SAF_NEW_ACCRUALS_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+measure: SAF_NEW_EXPIRED_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+measure: SAF_NEW_UTILIZATION_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+measure: SAF_PS_ACCRUALS_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+measure: SAF_PS_EXPIRED_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+measure: SAF_PS_UTILIZATION_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+measure: SAF_FLEX_ACCRUALS_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+measure: SAF_FLEX_EXPIRED_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+measure: SAF_FLEX_UTILIZATION_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+measure: SAF_TOTAL_ACCRUALS_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+measure: SAF_TOTAL_EXPIRED_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+measure: SAF_TOTAL_UTILIZATION_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+measure: SAF_CARE_CONNECT_SPEND_last_update {
+    label:
+    hidden: yes
+    type: date
+    sql: current_date ;;
+}
+
+
+

@@ -1,0 +1,117 @@
+fact_metrics_agg_changes:-
+
+dimension: vehicle_sales {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.vehicle_sales;;
+}
+dimension: mechanical_sales {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.mechanical_sales;;
+}
+dimension: maintenance_sales {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.maintenance_sales;;
+}
+dimension: cpo_sales {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.cpo_sales;;
+}
+dimension: total_sales_security {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.total_sales_security;;
+}
+dimension: mechanical_penetration_pct {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.mechanical_penetration_pct;;
+}
+dimension: maintenance_penetration_pct {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.maintenance_penetration_pct;;
+}
+dimension: cpo_penetration_pct {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.cpo_penetration_pct;;
+}
+dimension: mech_cpo_pen_pct {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.mech_cpo_pen_pct;;
+}
+dimension: mech_cpo_pen_pct_obj {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.mech_cpo_pen_pct_obj;;
+}
+dimension: saf_new_accruals {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.saf_new_accruals;;
+}
+dimension: saf_new_expired {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.saf_new_expired;;
+}
+dimension: saf_new_utilization {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.saf_new_utilization;;
+}
+dimension: saf_ps_accruals {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.saf_ps_accruals;;
+}
+dimension: saf_ps_expired {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.saf_ps_expired;;
+}
+dimension: saf_ps_utilization {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.saf_ps_utilization;;
+}
+dimension: saf_flex_accruals {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.saf_flex_accruals;;
+}
+dimension: saf_flex_expired {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.saf_flex_expired;;
+}
+dimension: saf_flex_utilization {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.saf_flex_utilization;;
+}
+dimension: saf_total_accruals {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.saf_total_accruals;;
+}
+dimension: saf_total_expired {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.saf_total_expired;;
+}
+dimension: saf_total_utilization {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.saf_total_utilization;;
+}
+dimension: saf_care_connect_spend {
+	type: number
+	hidden: yes
+	sql: ${TABLE}.saf_care_connect_spend;;
+}
