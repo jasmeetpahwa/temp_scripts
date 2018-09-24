@@ -4064,12 +4064,4 @@ labor_per_ro_subaru                  ,
 parts_labor_sales_ratio              
 from fact_metrics_agg_division_temp);
 
-
-GRANT SELECT ON soa_deliver.fact_metrics TO looker_soa_ro;
-GRANT SELECT ON soa_deliver.fact_metrics_agg_entity TO looker_soa_ro;
-GRANT SELECT ON soa_deliver.fact_metrics_agg_district TO looker_soa_ro;
-GRANT SELECT ON soa_deliver.fact_metrics_agg_zone TO looker_soa_ro;
-GRANT SELECT ON soa_deliver.fact_metrics_agg_region TO looker_soa_ro;
-GRANT SELECT ON soa_deliver.fact_metrics_agg_division TO looker_soa_ro;
-
 COMMIT;

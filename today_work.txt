@@ -1,2 +1,7 @@
+yesterday's work:-
+investigated PDMAutoUpdate_GET_Jira
+
+
 today's work:-
-updated manual script for schema_setup.sql
+add_step.py
+release_step.py
