@@ -5,3 +5,24 @@ investigated PDMAutoUpdate_GET_Jira
 today's work:-
 add_step.py
 release_step.py
+steps.json
+updated alter_table_script.sql
+PDMAutoUpdate_GET_Jira DE-2***
+tested looker metrics
+unicorns call
+retro
+
+today's work:-
+looker comparison
+git settings
+openvpn settings
+AS18-344(understanding)(separating agp and send download report)
+AS18-344(work done)
+DE-2545(understanding)(CheckMissingMilestones)
+DE-2545(Done)
+KT(Shubhomoy)
+DE-2503(understanding)
+internal standup
+DE-2271
+time sheet
+
