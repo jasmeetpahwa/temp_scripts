@@ -1,8 +1,8 @@
-yesterday's work:-
+Friday's work:-
 investigated PDMAutoUpdate_GET_Jira
 
 
-today's work:-
+Monday's work:-
 add_step.py
 release_step.py
 steps.json
@@ -12,7 +12,7 @@ tested looker metrics
 unicorns call
 retro
 
-today's work:-
+Tuesday's work:-
 looker comparison
 git settings
 openvpn settings
@@ -26,3 +26,12 @@ internal standup
 DE-2271
 time sheet
 
+Wednesday's work:-
+DE-2620(consume csv from s3)
+DE-2271(add log rotation in excel reporting service)
+DE-2271(done)
+AS18-344(worked on review points)(separating of agp and reports sending)
+DE-2622(updated metadata)
+DE-2431(set an env variable on admin stg for getting current release branch)
+tell Anderson about release-20190928
+internal stand up
