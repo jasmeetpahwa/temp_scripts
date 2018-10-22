@@ -1,38 +1,24 @@
-Friday's work:-
-investigated PDMAutoUpdate_GET_Jira
+tuesday's work:-
+MAFY18-108:- understanding ticket
+MAFY18-108:- excel changes
+MAFY18-108:- understanding python code
+Update Daily Dealer Report for AGP 2.0
 
+wednesday's work:- 
+de-2620:- review points
+ask niral about bug in s3.py line no 144-149
+tested changes
+MAFY18-108:- excel changes and sql file changes
 
-Monday's work:-
-add_step.py
-release_step.py
-steps.json
-updated alter_table_script.sql
-PDMAutoUpdate_GET_Jira DE-2***
-tested looker metrics
-unicorns call
-retro
+thursday's work:-
+de-2620:- review comments and its solution
+MAFY18-108:- fixed #ref in excel
+MAFY18-108:- made changes in 4 sql scripts
+MAFY18-108:- tested changes
+de-2620:- worked and tested review points
 
-Tuesday's work:-
-looker comparison
-git settings
-openvpn settings
-AS18-344(understanding)(separating agp and send download report)
-AS18-344(work done)
-DE-2545(understanding)(CheckMissingMilestones)
-DE-2545(Done)
-KT(Shubhomoy)
-DE-2503(understanding)
-internal standup
-DE-2271
-time sheet
+friday's work:- 
+RH
 
-Wednesday's work:-
-DE-2620(consume csv from s3)
-DE-2271(add log rotation in excel reporting service)
-DE-2271(done)
-AS18-344(worked on review points)(separating of agp and reports sending)
-DE-2622(updated metadata)
-DE-2431(set an env variable on admin stg for getting current release branch)
-tell Anderson about release-20190928
-internal stand up
-unicorns stand up
+monday's work:-
+
