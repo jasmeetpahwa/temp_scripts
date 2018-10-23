@@ -21,4 +21,52 @@ friday's work:-
 RH
 
 monday's work:-
+time sheet(0.5 hour)
+epic DE-2695
+etl-prd-1:-
+    DE-2696:- investigated NCIAutoUpdate_STEP_MAIN (bad feed)(informed casey)
+    DE-2697:- investigated MainframeAutoUpdate_STEP_GET(sftp down)
+    DE-2698:- investigated MainframeAutoUpdate_VPIPE_MTD(stg, dev too)(oracle passwords expired)
+    DE-2699:- investigated MainframeAutoUpdate_VPIPE(stg, dev too)(oracle passwords expired)
 
+etl-stg-1:-
+    AppAutoUpdate failed due to chef changes
+    DE-2700:- investigated VWAutoUpdate(connection timed out)
+    DE-2701:- Excel Dev Server not generating reports(informed nick)
+    AGP-IPRO:- Assertion 10 Failed
+
+etl-dev-1:-
+    DE-2702:- some reports are failing to be uploaded.
+    DE-2703:- investigated Latefiles_Notifications(config for mt was missing, so removed 'mt' from envs)
+    DE-2704:- investigated Incremental_Import_Data_Quality(config for mt was missing)
+look into saf metrices
+add .gitignore in customer directories
+
+
+tuesday's work:-
+Looked into all the failing jobs.
+investigated NCIAutoUpdate_STEP_MAIN( again due to bad feed ask abhishek about it )
+investigated PartsAutoUpdate_MI50_Accessories
+investigated VWAutoUpdate
+soa340:-
+Unexpected file: Infiniti_AllFields_woNatl.xlsx
+MainframeAutoUpdate_VPIPE_MTD
+
+
+to-do:-
+SOA-340:-
+{
+    projected_sales
+    part_sales
+    part_sales_objective
+    pct_part_sales_to_obj (make it calculated member)
+    pnvw
+    sales_rate
+    pct_proj_vs_obj (make it calculated member)
+    port_sales
+    39_PORT_PNVW
+    40_PORT_OBJ
+    41_PORT_OBJ_PCT (make it calculated member)
+    whs_sales
+}
+check NCIAutoUpdate_STEP_MAIN
