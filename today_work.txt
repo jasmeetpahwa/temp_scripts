@@ -48,25 +48,119 @@ Looked into all the failing jobs.
 investigated NCIAutoUpdate_STEP_MAIN( again due to bad feed ask abhishek about it )
 investigated PartsAutoUpdate_MI50_Accessories
 investigated VWAutoUpdate
-soa340:-
+soa340:-find all the metrics which are not calculated at dealer level
+soa340:-figuring why diff in results (when multipling with dealer count)
 Unexpected file: Infiniti_AllFields_woNatl.xlsx
 MainframeAutoUpdate_VPIPE_MTD
 
+wednesday's work:-
+investigated NCIAutoUpdate_STEP_MAIN(bad feed)(records are still existing in tables)(quarantined file from custominput also)
+investigated AGP_IPRO(Assertion 10 failed)
+investigated PullAndPushLoyaltyReports(not failing on stg, prd because no of files tring to send is 0 there \
+                                        on dev it is tring to send 668 files)
+investigated CA_DOM_DSR(restarted)
+reviewing DE-2700 and DE-2704
+DE-2707:- investigated SSOAutoUpdate(taking long time)
+investigated VPIPEMixMgmt(taking long time)(issue was oracle password changed)
+DE-2707:- found the issue and fixed it.
+de-2620:- compared AppAutoUpdate data
 
-to-do:-
-SOA-340:-
-{
-    projected_sales
-    part_sales
-    part_sales_objective
-    pct_part_sales_to_obj (make it calculated member)
-    pnvw
-    sales_rate
-    pct_proj_vs_obj (make it calculated member)
-    port_sales
-    39_PORT_PNVW
-    40_PORT_OBJ
-    41_PORT_OBJ_PCT (make it calculated member)
-    whs_sales
-}
-check NCIAutoUpdate_STEP_MAIN
+thursday's work:-
+dw-admin-prd-1:-
+    investigated PDMAutoUpdate_GET_Jenkins(someone removed the build it ran fine after that)
+    investigated PDMAutoUpdate_GET_ServerStatus(someone removed the build it ran fine after that)
+    investigated PDMAutoUpdate_PROPAGATE(someone removed the build it ran fine after that)
+    investigated PDMAutoUpdate_DIMENSIONALITY(someone removed the build it ran fine after that)
+    investigated Update_Jenkins_Metrics(someone removed the build it ran fine after that)
+    Reason:-
+    Logstash plugin that sends events to the kafka cluster was broken on the PRD host `dw-admin-prd-1`.
+    investigated Incremental_Import_Data_Quality(config file issue on prd)
+
+etl-prd-1:-
+    investigated ESAnalytics_Report(aborted by Jun Xue)
+
+etl-stg-1:-
+    investigated SPAAutoUpdate_STEP_INTERMED
+
+new feed:-
+    /nna_epsilon/inbound/dev (First file received on 24.10.2018)
+    /mixmgmt_nnait/inbound/prodpipe (First file received on 22.10.2018)
+
+soa-395:-
+    understanding ticket.
+    started working on it.
+
+friday's work:-(dont fill more than 6.5 hrs)
+investigated Incremental_Import_Data_Quality(config file issue on prd)
+investigated Latefiles_Notifications(config file issue on pr[mt config not present there])
+investigated SPAAutoUpdate_STEP_DATAIMPORT(failed on dev, stg and prd)
+investigated SOA_RecommendedMetrics($DB_USER is reporter_cba and change it reporter_soa and edit job parameters)
+investigated SPAAutoUpdate_STEP_SEND
+
+(29th october)monday's work:-
+internal retro
+investigated AppAutoUpdate(prd)
+DE-2709:- investigated SOA_RecommendedMetrics($DB_USER is reporter_cba and change it reporter_soa and edit job parameters)
+DE-2712:- investigated NMAAutoUpdate_MAIN($DB_USER is reporter_cba and change it reporter_soa and edit job parameters)
+DE-2713:- investigated SPAAutoUpdate_STEP_DATAIMPORT(bad feed)
+DE-2714:- investigated CoEfficientUsers(job failed because the call to api function files_download failed, 
+                                        This app is currently disabled)
+DE-2715:- investigated GeckoAutoUpdate(job failed because the call to api function files_download failed, 
+                                        This app is currently disabled)
+DE-2716:-investigated Generate Coverage Report(job failed because the call to api function files_download failed, 
+                                        This app is currently disabled)
+DE-2717:- investigated NMAAutoUpdate_DIMENSIONALITY($DB_USER is reporter_cba)
+Made and tested changes for DE-2709, DE-2712, DE-2717
+unicorns sprint planning
+
+(30th october)tuesday's work:-
+investigated CoEfficientUsers(prd)(job failed because the call to api function files_download failed, 
+                                        This app is currently disabled)
+DE-2715:- investigated GeckoAutoUpdate(job failed because the call to api function files_download failed, 
+                                        This app is currently disabled)
+DE-2716:-investigated Generate Coverage Report(job failed because the call to api function files_download failed, 
+                                        This app is currently disabled)
+DE-2717:- testing of updated code
+DE-2708:- disabled feed import of NSSI and NCSI
+AppAutoUpdate failed on dev due to HTTP error
+manual step for droping views and tables
+ask niral for reporter_soa
+de-2620:- verified data
+AS18-387
+MAFY18-108:- update
+
+
+stand up notes:-
+jobs failing due to $DB_USER
+jobs failing due to dropbox files download function
+appautoupdate failing due to http error
+made changes for SPAAutoUpdate_STEP_DATAIMPORT
+checked appautoupdate data
+changed code for 3 jobs to use customer specific db_user 
+started working on AS18-387(Remove financial data points using ACB and ACB groups comparisons)
+
+
+(31st october)wednesday's work:-
+prd envs:-
+    NMAAutoUpdate_MAIN($DB_User issue)
+    CoEfficientUsers(dropbox api issue)
+    investigated Latefiles_Notifications
+
+stg envs:-
+    NMAAutoUpdate_MAIN($DB_User issue)
+    CoEfficientUsers(dropbox api issue)
+    investigated Latefiles_Notifications
+    SOA_RecommendedMetrics($DB_USER issue)
+
+dev envs:-
+    NMAAutoUpdate_METADATA($DB_User issue)
+    CoEfficientUsers(dropbox api issue)
+    investigated Latefiles_Notifications
+    SOA_RecommendedMetrics($DB_USER issue)
+    GeckoAutoUpdate
+    Generate Coverage Report
+    AppAutoUpdate
+
+AS18-387
+SOA-222    
+
