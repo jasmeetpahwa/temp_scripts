@@ -1,166 +1,218 @@
-tuesday's work:-
-MAFY18-108:- understanding ticket
-MAFY18-108:- excel changes
-MAFY18-108:- understanding python code
-Update Daily Dealer Report for AGP 2.0
+1st November:-
+investigated all the failing jobs + nagbot                                30 min
+AGP_IPRO_Reports failing on etl-prd-1 due to socket time out              10 min
+CA_DOM_DSR failing on etl-dev-1 due to no space left on device            10 min
+MAINFrameAutoUpdate_VPIPE_MTD failed because it could not access oracle
+AppAutoUpdate failed due to HTTP error 403
 
-wednesday's work:- 
-de-2620:- review points
-ask niral about bug in s3.py line no 144-149
-tested changes
-MAFY18-108:- excel changes and sql file changes
-
-thursday's work:-
-de-2620:- review comments and its solution
-MAFY18-108:- fixed #ref in excel
-MAFY18-108:- made changes in 4 sql scripts
-MAFY18-108:- tested changes
-de-2620:- worked and tested review points
-
-friday's work:- 
-RH
-
-monday's work:-
-time sheet(0.5 hour)
-epic DE-2695
-etl-prd-1:-
-    DE-2696:- investigated NCIAutoUpdate_STEP_MAIN (bad feed)(informed casey)
-    DE-2697:- investigated MainframeAutoUpdate_STEP_GET(sftp down)
-    DE-2698:- investigated MainframeAutoUpdate_VPIPE_MTD(stg, dev too)(oracle passwords expired)
-    DE-2699:- investigated MainframeAutoUpdate_VPIPE(stg, dev too)(oracle passwords expired)
-
-etl-stg-1:-
-    AppAutoUpdate failed due to chef changes
-    DE-2700:- investigated VWAutoUpdate(connection timed out)
-    DE-2701:- Excel Dev Server not generating reports(informed nick)
-    AGP-IPRO:- Assertion 10 Failed
-
-etl-dev-1:-
-    DE-2702:- some reports are failing to be uploaded.
-    DE-2703:- investigated Latefiles_Notifications(config for mt was missing, so removed 'mt' from envs)
-    DE-2704:- investigated Incremental_Import_Data_Quality(config for mt was missing)
-look into saf metrices
-add .gitignore in customer directories
+AS18-387:- metadata changes for all 261 metrics
+MAFY18-123:- EARNINGS_AGP_IPRO_PCT_2, EARNINGS_AGP_IPRO_2 are incorrect
+MAFY18-108:-  Update Daily Dealer Report for AGP 2.0
+investigated NCIAutoUpdate_Main
 
 
-tuesday's work:-
-Looked into all the failing jobs.
-investigated NCIAutoUpdate_STEP_MAIN( again due to bad feed ask abhishek about it )
-investigated PartsAutoUpdate_MI50_Accessories
-investigated VWAutoUpdate
-soa340:-find all the metrics which are not calculated at dealer level
-soa340:-figuring why diff in results (when multipling with dealer count)
-Unexpected file: Infiniti_AllFields_woNatl.xlsx
-MainframeAutoUpdate_VPIPE_MTD
+2nd November:-
+DE-2727:- investigated PDMAutoUpdate_GET_Jira
+AppAutoUpdate failed due to HTTP 403 error
+SPAAutoUpdate_STEP_DATAIMPORT failed due to bad feed(quarantined bad feed)
+AGP_IPRO failed due to Assertion 10 failed
+MAFY18-108:-
+changes and testing
 
-wednesday's work:-
-investigated NCIAutoUpdate_STEP_MAIN(bad feed)(records are still existing in tables)(quarantined file from custominput also)
-investigated AGP_IPRO(Assertion 10 failed)
-investigated PullAndPushLoyaltyReports(not failing on stg, prd because no of files tring to send is 0 there \
-                                        on dev it is tring to send 668 files)
-investigated CA_DOM_DSR(restarted)
-reviewing DE-2700 and DE-2704
-DE-2707:- investigated SSOAutoUpdate(taking long time)
-investigated VPIPEMixMgmt(taking long time)(issue was oracle password changed)
-DE-2707:- found the issue and fixed it.
-de-2620:- compared AppAutoUpdate data
-
-thursday's work:-
-dw-admin-prd-1:-
-    investigated PDMAutoUpdate_GET_Jenkins(someone removed the build it ran fine after that)
-    investigated PDMAutoUpdate_GET_ServerStatus(someone removed the build it ran fine after that)
-    investigated PDMAutoUpdate_PROPAGATE(someone removed the build it ran fine after that)
-    investigated PDMAutoUpdate_DIMENSIONALITY(someone removed the build it ran fine after that)
-    investigated Update_Jenkins_Metrics(someone removed the build it ran fine after that)
-    Reason:-
-    Logstash plugin that sends events to the kafka cluster was broken on the PRD host `dw-admin-prd-1`.
-    investigated Incremental_Import_Data_Quality(config file issue on prd)
-
-etl-prd-1:-
-    investigated ESAnalytics_Report(aborted by Jun Xue)
-
-etl-stg-1:-
-    investigated SPAAutoUpdate_STEP_INTERMED
-
-new feed:-
-    /nna_epsilon/inbound/dev (First file received on 24.10.2018)
-    /mixmgmt_nnait/inbound/prodpipe (First file received on 22.10.2018)
-
-soa-395:-
-    understanding ticket.
-    started working on it.
-
-friday's work:-(dont fill more than 6.5 hrs)
-investigated Incremental_Import_Data_Quality(config file issue on prd)
-investigated Latefiles_Notifications(config file issue on pr[mt config not present there])
-investigated SPAAutoUpdate_STEP_DATAIMPORT(failed on dev, stg and prd)
-investigated SOA_RecommendedMetrics($DB_USER is reporter_cba and change it reporter_soa and edit job parameters)
-investigated SPAAutoUpdate_STEP_SEND
-
-(29th october)monday's work:-
-internal retro
-investigated AppAutoUpdate(prd)
-DE-2709:- investigated SOA_RecommendedMetrics($DB_USER is reporter_cba and change it reporter_soa and edit job parameters)
-DE-2712:- investigated NMAAutoUpdate_MAIN($DB_USER is reporter_cba and change it reporter_soa and edit job parameters)
-DE-2713:- investigated SPAAutoUpdate_STEP_DATAIMPORT(bad feed)
-DE-2714:- investigated CoEfficientUsers(job failed because the call to api function files_download failed, 
-                                        This app is currently disabled)
-DE-2715:- investigated GeckoAutoUpdate(job failed because the call to api function files_download failed, 
-                                        This app is currently disabled)
-DE-2716:-investigated Generate Coverage Report(job failed because the call to api function files_download failed, 
-                                        This app is currently disabled)
-DE-2717:- investigated NMAAutoUpdate_DIMENSIONALITY($DB_USER is reporter_cba)
-Made and tested changes for DE-2709, DE-2712, DE-2717
-unicorns sprint planning
-
-(30th october)tuesday's work:-
-investigated CoEfficientUsers(prd)(job failed because the call to api function files_download failed, 
-                                        This app is currently disabled)
-DE-2715:- investigated GeckoAutoUpdate(job failed because the call to api function files_download failed, 
-                                        This app is currently disabled)
-DE-2716:-investigated Generate Coverage Report(job failed because the call to api function files_download failed, 
-                                        This app is currently disabled)
-DE-2717:- testing of updated code
-DE-2708:- disabled feed import of NSSI and NCSI
-AppAutoUpdate failed on dev due to HTTP error
-manual step for droping views and tables
-ask niral for reporter_soa
-de-2620:- verified data
-AS18-387
-MAFY18-108:- update
+5th November:-
+MAFY18-108:- multiple metrics in datasheet(with same name)
+diwali events(pooja, rangoli, game)
 
 
-stand up notes:-
-jobs failing due to $DB_USER
-jobs failing due to dropbox files download function
-appautoupdate failing due to http error
-made changes for SPAAutoUpdate_STEP_DATAIMPORT
-checked appautoupdate data
-changed code for 3 jobs to use customer specific db_user 
-started working on AS18-387(Remove financial data points using ACB and ACB groups comparisons)
+6th November:-
+DE-2731:- change all nma jobs to use reporter_nma as db_user
+DE-2732:- change all SOA job to use reporter_soa as db_user
+
+12th November:-
+looked for 
+NNA_Recommended and 
+NMAC_Recommended jobs (failing on stg)
+DE-2693:- understanding ticket
+DE-2693:- understanding code
+DE-2693:- did coding
+DE-2694:- understanding code
+DE-2694:- Changed Code
+DE-2694:- tested code
+action plan api
+Contact reports data
+
+13th November:-
+worked on review points of all tickets
+DE-2570:- could not test because of 'WORKSPACE' variable in env, 
+AS18-387:- review points
+DE-2693:- made code changes
+DE-2694:- made code channges and tested changes
+DE-2694:- validating data
+net not working
+DE-2694:- validating data
 
 
-(31st october)wednesday's work:-
-prd envs:-
-    NMAAutoUpdate_MAIN($DB_User issue)
-    CoEfficientUsers(dropbox api issue)
-    investigated Latefiles_Notifications
+14th November:-
+DE-2694:- Validating data
+fetching api data prd(making code changes)
+fetching s3 data from prd
+comparing data
+DE-2727:- investigate PDMAutoUpdate_GET_Jira
+package diff at prd and local
+failing from 1st November
 
-stg envs:-
-    NMAAutoUpdate_MAIN($DB_User issue)
-    CoEfficientUsers(dropbox api issue)
-    investigated Latefiles_Notifications
-    SOA_RecommendedMetrics($DB_USER issue)
+15th November:-
+DE-2694:- comaparing api and s3 data(fetching data customer wise)
+sq hackathon
+NCI18-46
+DE-2727:-
 
-dev envs:-
-    NMAAutoUpdate_METADATA($DB_User issue)
-    CoEfficientUsers(dropbox api issue)
-    investigated Latefiles_Notifications
-    SOA_RecommendedMetrics($DB_USER issue)
-    GeckoAutoUpdate
-    Generate Coverage Report
-    AppAutoUpdate
+16th November:-
+SQ Hackathon
 
-AS18-387
-SOA-222    
+19th November:-
+DE-2693:- comparing action plans data
+MAFY18-130:- AGP daily reports requirements update.
+de-2727:- PDMAutoUpdate_GET_Jira
+de-2694:- contact_reports
 
+20th November:-
+DE-2693:- figuring whether leading zeros are absent in s3 file or they get trimmed while importing it to database (1 Hour)
+DE-2719:- understanding ticket
+DE-2719:- understanding drive_api_client.py
+DE-2719:- _adoption_sync.py
+estimates for DE-2719:-
+start time:- 1:30 p.m.
+1 hour understanding files
+1.5 hour implementing them
+1 hour testing changes
+
+estimates for SOR18-42:- (making a job for Aged Inventory Reports)Some updates from michael
+work on comment by michael (.5 hour)
+testing (.5 hour)
+make jenkins job (.5 hour)
+
+estimates for MAFY18-130:-
+
+
+
+internal stand up
+unicorns stand up
+sprint planning
+DE-2719:- replaced dropbox calls with google drive calls
+SOR18-42:- (making a job for Aged Inventory Reports)Some updates from michael
+MAFY18-130:- AGP daily reports requirements update.(understanding clean_agp_ipro_incentives)
+
+
+21st November:-
+DE-2719:- Review points(see comment for review points)
+estimates for DE-2719:- 
+handing big files:- 2 hour
+Identifing User:- 1 hour
+
+SOR18-42:- Handling incomplete download files, testing(1.5 hour)
+
+DE-2693:-
+Verify what niral has asked for:- 1 hour
+
+DE-2694:- 
+Verify what niral has asked for:- 1 hour
+
+Unicorns stand up(1 hour)
+
+
+
+
+22nd November:-
+DE-2719:- testing of updated code
+
+SO18-136:- understanding ticket and refrences
+
+SO18-70:- Return on Sales data still on June
+
+NMAC18-72:- Late File Notification Identifies Maint file as late
+
+
+
+
+estimates of DE-2719:-
+Testing and fixing if any issue:- 45 min
+checking if loaded to data-integration user or not:- 15-45 min
+uploading files to particular folder only:- 45 min
+
+estimate of SO18-136:-
+.5 hour backtrack the code
+.5 hour find datapoints
+.5 hour check if datapoints are being created or not
+
+estimates of SO18-70:-
+backtrack feed and check feed:- .5 hour
+check why not loading:- .5 hour
+
+estimates of NAMC18-72:-
+understand ticket:- 20 min
+working on it.
+
+23rd November:-
+DE-2757:-
+Making code changes
+
+estimates of DE-2757:- 
+Explore how to do it:- 1 Hour
+Implement and test:- 1 Hour
+Team drive access to only admin account:- 1 hour
+
+
+24th November:-
+MAFY18-130:- AGP daily reports requirements update.
+understanding clean_agp_ipro_incentives
+
+MAFY18-128:- Update Daily Dealer Report for IPRO 2.0
+
+
+estimates of MAFY18-130:-
+start time:- 12:10 pm
+understand script:- .5 hour
+make code changes:- .5 hour
+testing changes:- .5 hour
+review points of this ticket
+
+
+estimates of MAFY18-128:-
+understanding tickets:- .33 min
+making changes:- .5 hour
+testing changes:- .5 hour
+
+
+
+27th November:-
+Working on review points of MAFY18-128 and MAFY18-130
+Testing changes of review points of MAFY18-128 and MAFY18-130
+
+NCI18-49:- Net Working Capital on October 2018 data, but should still be on September 2018 data
+
+estimates of NCI18-49:-
+understanding ticket:- .33 hour
+backtracking source: 1 hour
+figuring reason behind problem:- 2 hour
+
+
+NMAC18-72:- Late File Notification Identifies Maint file as late
+
+AS18-374:- Dealer Master is updated too late on Tuesdays.
+
+SOA-420:- Validating Subru metrics
+check fact_metric, simple_fact_metric, hero_metric
+
+
+
+
+
+to-do:-
+work on add_log_rotation ticket.
+
+important to-do:-
+make manual step for vinpipe_Aged_inventory
+add manual step for DE-2719:- config/gdrive_file_mapping.json
+Comment on ticket SO18-70
+share action_plans, contact_reports results with niral
