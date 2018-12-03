@@ -205,14 +205,38 @@ SOA-420:- Validating Subru metrics
 check fact_metric, simple_fact_metric, hero_metric
 
 
+28th November:-
+DE-2761:- DemoAutoUpdate failing on dev and stg(fixed it)
+MAFY18-128:- Review Ponts
+MAFY18-130:- Review Ponts
+SOA-420:- 
+PDM job failing fixed
+unicorns retro
 
+
+29th November:-
+NCI18-49:- show data till september only of net working capital (quarantined feed)
+MAFY18-130:- Done
+MAFY18-128:- Done
+DE-2693:- commented on ticket
+DE-2694:- 100000 records are for
+fetching data for api from 2015
+SOA-420:-
+
+
+30th November:-
+DE-2694:- compare api data with s3
+SOA-420:- Compared metrics(insights vs looker)
+(made dashboard again for new metrics)
+validated fact_metric
+
+1st November:-
+SOA-420:- Metrics validation
+validated simple fact_metric
 
 
 to-do:-
 work on add_log_rotation ticket.
 
 important to-do:-
-make manual step for vinpipe_Aged_inventory
-add manual step for DE-2719:- config/gdrive_file_mapping.json
 Comment on ticket SO18-70
-share action_plans, contact_reports results with niral
