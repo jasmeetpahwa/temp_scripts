@@ -1,242 +1,227 @@
-1st November:-
-investigated all the failing jobs + nagbot                                30 min
-AGP_IPRO_Reports failing on etl-prd-1 due to socket time out              10 min
-CA_DOM_DSR failing on etl-dev-1 due to no space left on device            10 min
-MAINFrameAutoUpdate_VPIPE_MTD failed because it could not access oracle
-AppAutoUpdate failed due to HTTP error 403
-
-AS18-387:- metadata changes for all 261 metrics
-MAFY18-123:- EARNINGS_AGP_IPRO_PCT_2, EARNINGS_AGP_IPRO_2 are incorrect
-MAFY18-108:-  Update Daily Dealer Report for AGP 2.0
-investigated NCIAutoUpdate_Main
-
-
-2nd November:-
-DE-2727:- investigated PDMAutoUpdate_GET_Jira
-AppAutoUpdate failed due to HTTP 403 error
-SPAAutoUpdate_STEP_DATAIMPORT failed due to bad feed(quarantined bad feed)
-AGP_IPRO failed due to Assertion 10 failed
-MAFY18-108:-
-changes and testing
-
-5th November:-
-MAFY18-108:- multiple metrics in datasheet(with same name)
-diwali events(pooja, rangoli, game)
-
-
-6th November:-
-DE-2731:- change all nma jobs to use reporter_nma as db_user
-DE-2732:- change all SOA job to use reporter_soa as db_user
-
-12th November:-
-looked for 
-NNA_Recommended and 
-NMAC_Recommended jobs (failing on stg)
-DE-2693:- understanding ticket
-DE-2693:- understanding code
-DE-2693:- did coding
-DE-2694:- understanding code
-DE-2694:- Changed Code
-DE-2694:- tested code
-action plan api
-Contact reports data
+3rd December:-
+    SOA-420:- Metrics validation
+    validated simple fact_metric
+
+    SO18-131:- Daily Sales Report emails 11 hours late
+    Understanding ticket.
+    Working on it.
+
+    SQNKS-44:-
+    Fixed jobs.
+
+4th December:-
+    SO18-131:- DSR emails late by 11 hour
+    Finding code where emails are sent.
+    officiating snakes and ladder.
+    The job responsible for sending DSR emails is trendi.
+    and we have sent emails from our side. The delay is from the app side.
+
+    find reason for stale data.
+
+    AS18-374:- Dealer master is updated too late on tuesdays.
+    finding reason
+    find if there is any dependency
+    removed dependency
 
-13th November:-
-worked on review points of all tickets
-DE-2570:- could not test because of 'WORKSPACE' variable in env, 
-AS18-387:- review points
-DE-2693:- made code changes
-DE-2694:- made code channges and tested changes
-DE-2694:- validating data
-net not working
-DE-2694:- validating data
+    DE-2570:-
+    Review points.
 
+    SOA-432:-
+    Made dashboard.
 
-14th November:-
-DE-2694:- Validating data
-fetching api data prd(making code changes)
-fetching s3 data from prd
-comparing data
-DE-2727:- investigate PDMAutoUpdate_GET_Jira
-package diff at prd and local
-failing from 1st November
+    Unicorns stand up:- .5 hour
+    Internal stand up:- .5 hour
 
-15th November:-
-DE-2694:- comaparing api and s3 data(fetching data customer wise)
-sq hackathon
-NCI18-46
-DE-2727:-
+5th December:-
+    SOA-432:- part 3
+    validated fact metric
+    validated simple fact_metric
 
-16th November:-
-SQ Hackathon
+    SOA-433:- part 4
+    Made dashboards
+    validating fact metric
 
-19th November:-
-DE-2693:- comparing action plans data
-MAFY18-130:- AGP daily reports requirements update.
-de-2727:- PDMAutoUpdate_GET_Jira
-de-2694:- contact_reports
+    Unicorns standup:-
+    1 hour
 
-20th November:-
-DE-2693:- figuring whether leading zeros are absent in s3 file or they get trimmed while importing it to database (1 Hour)
-DE-2719:- understanding ticket
-DE-2719:- understanding drive_api_client.py
-DE-2719:- _adoption_sync.py
-estimates for DE-2719:-
-start time:- 1:30 p.m.
-1 hour understanding files
-1.5 hour implementing them
-1 hour testing changes
+6th December:-
+    SOA-433:- part 4
+    validating fact_metric
+    validating simple fact_metric
+    
+    internal stand up:- .5 hour
+    unicorns stand up:- 1 hour
 
-estimates for SOR18-42:- (making a job for Aged Inventory Reports)Some updates from michael
-work on comment by michael (.5 hour)
-testing (.5 hour)
-make jenkins job (.5 hour)
+7th December:-
+    SOA-433:-
+        validating simple_fact_metric
 
-estimates for MAFY18-130:-
+    SO18-136:-
+        validated feed
 
+10th December:-
+    Build Runner:-
+        prd:-
+            PDMAutoUpdate_GET_Jenkins(Authentication Error)(investigate)
+            PartsAutoUpdate_PartSales (Confirmed_Install_Date column does not exists)(investigate)
+            SPAAutoUpdate_STEP_DATAIMPORT (Confirmed_Install_Date column does not exists)(investigate)
 
+            Skip:-
+                PDMAutoUpdate_GET_Misc_Sources (skip(failing due to drive_api_client issue))
+        
+        stg:-
+            AppAutoUpdate:- (No space left on device)
+            CA_DOM_DSR:- (No space left on device)
+            MainframeAutoUpdate_STEP_GET:- (No space left on device)
+            MainframeAutoUpdate_STEP_LOAD:- (No space left on device)
+            MainframeAutoUpdate_VPIPE:- (No space left on device)
+            NCIAutoUpdate_STEP_MAIN:- (No space left on device)
+            NMAC_Recommended Metrics:- (Memory Error)
+            RO_STEP_ROLLUP:- (No space left on device)
+            SPAAutoUpdate_STEP_SEND:- (No space left on device)
+            Website Traffic Report (Excel-stg-nissan-1 not working)(work on it)
 
-internal stand up
-unicorns stand up
-sprint planning
-DE-2719:- replaced dropbox calls with google drive calls
-SOR18-42:- (making a job for Aged Inventory Reports)Some updates from michael
-MAFY18-130:- AGP daily reports requirements update.(understanding clean_agp_ipro_incentives)
+            Skip:-
+                PDMAutoUpdate_GET_Misc_Sources (skip(failing due to drive_api_client issue))
+                ESAnalytics_Report (skip)
 
+        dev:-
+            PartsAutoUpdate_PartSales (Confirmed_Install_Date column does not exists)(investigate)
+            SPAAutoUpdate_STEP_DATAIMPORT (Confirmed_Install_Date column does not exists)(investigate)
 
-21st November:-
-DE-2719:- Review points(see comment for review points)
-estimates for DE-2719:- 
-handing big files:- 2 hour
-Identifing User:- 1 hour
+            Skip:-
+                PDMAutoUpdate_GET_Misc_Sources (skip(failing due to drive_api_client issue))
+                SalesFunnelAutoUpdate (Sean is working on it. DB password not supplied)
+                CheckMissingMileStones (Skip)
+                VPipe_Sales_Ops (Michael is working on it)
 
-SOR18-42:- Handling incomplete download files, testing(1.5 hour)
+Investigated all jobs on all servers.
 
-DE-2693:-
-Verify what niral has asked for:- 1 hour
+SQNKS-69:-
+    Investigated Error
+    Quarantined feed
 
-DE-2694:- 
-Verify what niral has asked for:- 1 hour
+SQNKS-70:-
+    investigating PDMAutoUpdate_GET_Jenkins
+    Reason:- ZipDMAAutoUpdate was in pending state from past 4 days. so it was not able to fetch its latest build number.
 
-Unicorns stand up(1 hour)
+NCI18-54:-
+    importing service retention daily feed
 
+internal stand up:- .5 hour
+unicorns stand up:- 50 min
 
+SQNKS-72:-
+    Made code changes
 
 
-22nd November:-
-DE-2719:- testing of updated code
 
-SO18-136:- understanding ticket and refrences
 
-SO18-70:- Return on Sales data still on June
 
-NMAC18-72:- Late File Notification Identifies Maint file as late
 
 
 
 
-estimates of DE-2719:-
-Testing and fixing if any issue:- 45 min
-checking if loaded to data-integration user or not:- 15-45 min
-uploading files to particular folder only:- 45 min
 
-estimate of SO18-136:-
-.5 hour backtrack the code
-.5 hour find datapoints
-.5 hour check if datapoints are being created or not
 
-estimates of SO18-70:-
-backtrack feed and check feed:- .5 hour
-check why not loading:- .5 hour
 
-estimates of NAMC18-72:-
-understand ticket:- 20 min
-working on it.
 
-23rd November:-
-DE-2757:-
-Making code changes
 
-estimates of DE-2757:- 
-Explore how to do it:- 1 Hour
-Implement and test:- 1 Hour
-Team drive access to only admin account:- 1 hour
+11th November:-
+    Nagbot notifications:-
+        Oracle DB password for SQRT360 will be expired on 13-OCT-18
 
+    prd:-
+        AppPerfReport (investigate) SQNKS:-74
+        AppAutoUpdate:- 403 forbidden
 
-24th November:-
-MAFY18-130:- AGP daily reports requirements update.
-understanding clean_agp_ipro_incentives
+    stg:-
+        AGP_IPRO_Reports:- fixed(in review SQNKS-72)
+        PartsAutoUpdate:- fixed(in review SQNKS-72)
+        AppPerfReport:- fixed(in review SQNKS-72)
+        PartsAutoUpdate_MI50_Accessories:- Investigate
+        PartsAutoUpdate_MI50_Parts:- fixed(in review SQNKS-72)
+        CA_DOM_DSR:- fixed(in review SQNKS-72)
+        Website Traffic Report:- fixed(in review SQNKS-72)
+        pg_backup: Aborted by Abhishek
+        ESAnalytics_Funnel:- Aborted by Abhishek
+        VPIPEMixMgmt:- Aborted by Abhishek
+        ESAnalytics_Report:- Investigate
+        SOA_Recommended Metrics:- Ignore
+        AppAutoUpdate:- 403 forbidden
 
-MAFY18-128:- Update Daily Dealer Report for IPRO 2.0
+    dev:-
+        NMAC_Recommended Metrics:- investigate
+        PartsAutoUpdate_MI50_Accessories:- investigate
+        AppAutoUpdate:- 403 forbidden
 
+    failed sniffs:-
+        BrandFundDailyNSSI_CQTD_20181119.txt failed sniffs
 
-estimates of MAFY18-130:-
-start time:- 12:10 pm
-understand script:- .5 hour
-make code changes:- .5 hour
-testing changes:- .5 hour
-review points of this ticket
+SQNKS-74:-
+    Quarantined feed
 
+P:-
+    Investigated NMAC_Recommended Metrics(Failing due to Index not set in dataframe)
+    Investigated PARTSAUTOUPDATE_MI50_ACCESSORIES(Failed due to failue of MAINFRAMEAUTOUPDATE_VPIPE_MTD)
+    Revalidating Subaru Metrics
 
-estimates of MAFY18-128:-
-understanding tickets:- .33 min
-making changes:- .5 hour
-testing changes:- .5 hour
+SQNKS-75:-
+    Oracle Password Check(beacuse on prd environment the job was failing to connect to sqlplus)
+    Oracle home config files
 
+NCI18-54:-
 
+Unicorns standup:-
+    45 mins
 
-27th November:-
-Working on review points of MAFY18-128 and MAFY18-130
-Testing changes of review points of MAFY18-128 and MAFY18-130
 
-NCI18-49:- Net Working Capital on October 2018 data, but should still be on September 2018 data
+12th December:-
+    failed sniffs:-
+        BrandFundDailyNSSI_CQTD_20181207.txt(contained 16 columns instead of 14)
+    unexpected files:-
+        NCI_Service_Retention20181210.csv
+        NNA_Infiniti_Monthly_Sales_201812110901.txt
 
-estimates of NCI18-49:-
-understanding ticket:- .33 hour
-backtracking source: 1 hour
-figuring reason behind problem:- 2 hour
+    prd:-(No new failure)
+        AppPerfReport(failed due to bad feed)
+        AppAutoUpdate:- HTTP Error 403
 
+    stg:-
+        PartsAutoUpdate:- Excel Server Issue
+        PartsAutoUpdate_MI50_Accessories:- Due to PartsAutoUpdate_MI50_Parts
+        AGP_IPRO_Reports:- Excel Server Issue
+        PartsAutoUpdate_MI50_Parts:- Excel Server Issue(triggered)
+        CA_DOM_DSR:- Excel Server Issue(triggered)
+        AppAutoUpdate:- 403 forrbidden error
+        SOA_Recommended Metrics:- Ask Abhishek
+        AppPerfReport:- Excel Server Issue(triggered)
+        AppAutoUpdate:- HTTP Error 403
 
-NMAC18-72:- Late File Notification Identifies Maint file as late
+    dev:-
+        AppAutoUpdate:- HTTP Error 403
+        VPipe_Sales_Ops:- Michael is working on it.
+        Dogfood:- investigate
+        UserSessionsTable:- investigate
+        P360Engagement:- investigate
 
-AS18-374:- Dealer Master is updated too late on Tuesdays.
+Investigated:-
+    AppPerfReport
+    Dogfood:- failing due to clickstream data issue.
+    UserSessionsTable:- failing due to clickstream data issue.
+    P360Engagement:- failing due to clickstream data issue.
 
-SOA-420:- Validating Subru metrics
-check fact_metric, simple_fact_metric, hero_metric
+DE-2271:- added log rotation
 
-
-28th November:-
-DE-2761:- DemoAutoUpdate failing on dev and stg(fixed it)
-MAFY18-128:- Review Ponts
-MAFY18-130:- Review Ponts
-SOA-420:- 
-PDM job failing fixed
-unicorns retro
-
-
-29th November:-
-NCI18-49:- show data till september only of net working capital (quarantined feed)
-MAFY18-130:- Done
-MAFY18-128:- Done
-DE-2693:- commented on ticket
-DE-2694:- 100000 records are for
-fetching data for api from 2015
-SOA-420:-
-
-
-30th November:-
-DE-2694:- compare api data with s3
-SOA-420:- Compared metrics(insights vs looker)
-(made dashboard again for new metrics)
-validated fact_metric
-
-1st November:-
-SOA-420:- Metrics validation
-validated simple fact_metric
-
+Close DE-2427
+Assigned to Saurabh DE-2759 
+DE-2271:- Pending on Abhishek
+DE-1933 and DE-2406 are duplicates
+DE-2102, DE-2059
 
 to-do:-
-work on add_log_rotation ticket.
-
-important to-do:-
-Comment on ticket SO18-70
+Make a ticket for this:- Parts Warrenty - Gross Profit % (On graph it is 28.07 and on tile it is 28.08)
+Keep an eye on SO18-131(Also, send niral the queue name where we send the emails)
+Comment on tickets to be closed tagging niral.
+Compare simple fact metrics after saurabh verifies them
+discuss about MainframeAutoUpdate_STEP_LOAD with Abhishek
