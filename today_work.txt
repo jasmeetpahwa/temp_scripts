@@ -213,15 +213,105 @@ Investigated:-
 
 DE-2271:- added log rotation
 
-Close DE-2427
-Assigned to Saurabh DE-2759 
-DE-2271:- Pending on Abhishek
-DE-1933 and DE-2406 are duplicates
-DE-2102, DE-2059
+13th December:-
+    failed sniffs:-
+        BrandFundDailyNSSI_CQTD_20181207.txt(contained 16 columns instead of 14)(Niral have commented out its mirroring in mirror_NCSI_NSSI_CQTD_Daily.sh)
+        Also can not insert beacuse it is append mode. It can be handled using HandleExtraColumns parameters.
+    unexpected files:-
+        test.txt (remote_path /nna_usai_leads)                                    Not inside ticket DE-2139
+        NCI_Service_Retention20181210.csv                                         Not inside ticket DE-2139
+        NNA_Infiniti_Monthly_Sales_201812110901.txt                               Inside DE-2139
+        NNA_Infiniti_Monthly_Service_201812120900.txt                             Inside DE-2139
+        NISSANINFINITIORDERS.ZIP(/mixmgmt_nnait/inbound/order_extracts)           Inside DE-2139
+
+    failed extractions:-
+        nna_org_2018-11-19.csv.pgp failed extraction(gpg: decryption failed: No secret key)
+
+    prd:-
+        AppPerfReport(feed issue)
+
+    stg:-
+        PartsAutoUpdate_MI50_Accessories:- Failed due to PartsAutoUpdate_MI50_Parts. 
+        PartsAutoUpdate_MI50_Parts:- (File already downloaded in previous build made by me.)
+        AppAutoUpdate:- HTTP Error 403
+        SOA_Recommended Metrics:- Assigned ticket to saurabh
+
+    dev:-
+        AppAutoUpdate:- HTTP Error 403
+        Update_NNA_Metrics:- Investigate
+        Dogfood:- failing due to clickstream data issue.
+        P360Engagement:- failing due to clickstream data issue.
+        UserSessionsTable:- investigate
+
+    Other failures:-
+        Data Plumber Failure:- Failure in processing message from topic 'sr.event.all' in transformation 'propagate_metrics' on 'PRD'.
+        Data Quality Check:- Unable to connect to server - ftp.biperf.com
+
+    P:-
+        investigated PartsAutoUpdate_MI50_Parts.(Reason was no new files to download)
+        Found if BrandFundDailyNSSI_CQTD_20181207 can be imported
+
+    DE-1933:-
+        findind location where logging is done
+        finding cause of duplication
+        reading kafka documentation.
+
+    DE-2693:- Final changes and testing
+
+    DE-2694:- Final changes and testing
+
+
+14th December:-
+    Build runner stuff:- Nagbot and brdash
+
+    prd:-
+        AppPerfReport
+
+    stg:-
+        AGP_IPRO_Reports:- Ask Pankaj to fix it.
+
+    dev:-
+        Dogfood:- failing due to clickstream data issue.
+        P360Engagement:- failing due to clickstream data issue.
+        UserSessionsTable:- failing due to clickstream data issue.
+        AppAutoUpdate:- HTTP Error 403
+
+    failed extractions:-
+        TQ20181204NISSAN.zip.gpg failed extraction:- gpg: decryption failed: No secret key
+        nna_org_2018-12-05.csv.pgp:- gpg: decryption failed: No secret key
+
+    Unexpected File:- 
+        Unexpected file: Infiniti_Certification_20181123.csv
+
+    Other failures:-
+        Data Quality Check:- Unable to connect to server - ftp.biperf.com
+        Data Plumber Failure:- Failure in processing message from topic 'sr.event.all' in transformation 'propagate_metrics' on 'PRD'.
+
+	DE-1933:- working on it.
+
+15th December:-
+				
+
+
+
+
+
+
+
+
+
+
+
 
 to-do:-
-Make a ticket for this:- Parts Warrenty - Gross Profit % (On graph it is 28.07 and on tile it is 28.08)
-Keep an eye on SO18-131(Also, send niral the queue name where we send the emails)
-Comment on tickets to be closed tagging niral.
-Compare simple fact metrics after saurabh verifies them
-discuss about MainframeAutoUpdate_STEP_LOAD with Abhishek
+Ask Abhishek about Nick's reply.
+Keep an eye on SO18-131(Also, send niral the queue name where we send the emails)(on saturday)
+discuss about MainframeAutoUpdate_STEP_LOAD(observe it till 21st December and then close DE-2427 and AS18-374)
+
+
+DE-1933 and DE-2406 are duplicates
+Also add to the table why this file is quarantined.
+DE-2102
+
+mention in de-2694:-
+89 records in api and s3 have status difference.
