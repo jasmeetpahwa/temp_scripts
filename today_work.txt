@@ -289,11 +289,46 @@ DE-2271:- added log rotation
 
 	DE-1933:- working on it.
 
+
 15th December:-
-				
+    Nagbot notifications.
 
+    Unexpected Files:-
+        NIS_SalesPen_R12_20181127.dat.PGP
+        Infiniti_Certification_20181213.csv
+        NCI_Service_Retention20181103.csv
+        NNA_Infiniti_Monthly_Sales_201812120900.txt
 
+    Failed Sniffs:-
 
+    Failed Extractions:-
+        nna_org_2018-11-15.csv.pgp
+
+    prd:-
+        AppPerfReport(feed issue)
+
+    stg:-
+        NMAC_Recommended Metrics:-  MemoryError
+        PartsAutoUpdate:- sq_util._excel_reporting.timeout.TimeoutError
+        CA_DOM_DSR:- sq_util._excel_reporting.timeout.TimeoutError
+        Website Traffic Report:- sq_util._excel_reporting.timeout.TimeoutError
+        SPAAutoUpdate_STEP_INTERMED:- Fixed(SQNKS-104)
+
+    dev:- 
+        Dogfood:- failing due to clickstream data issue.
+        P360Engagement:- failing due to clickstream data issue.
+        UserSessionsTable:- failing due to clickstream data issue.
+        SPAAutoUpdate_STEP_INTERMED:- Fixed(SQNKS-104)
+
+SQNKS-104:-
+    Investigated and fixed issue.
+
+DE-2693 and DE-2694 :-
+    Review points
+    Testing
+
+DE-2570:-
+    
 
 
 
