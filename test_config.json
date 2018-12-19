@@ -1,0 +1,42 @@
+{
+  'nmac': {
+      'url': 'git@github.com:square-root/metrics-nmac-dev.git',
+      'branch': 'master'
+  },
+  'nna': {
+      'url': 'git@github.com:square-root/metrics-nna-dev.git',
+      'branch': 'master'
+  },
+  'nci': {
+      'url': 'git@github.com:square-root/metrics-nci-dev.git',
+      'branch': 'master'
+  },
+  'soa': {
+      'url': 'git@github.com:square-root/metrics-soa-dev.git',
+      'branch': 'master'
+  },
+  'hma': {
+      'url': 'git@github.com:square-root/metrics-hma-dev.git',
+      'branch': 'master'
+  },
+  'vw': {
+      'url': 'git@github.com:square-root/metrics-vw-dev.git',
+      'branch': 'master'
+  },
+  'thl': {
+      'url': 'git@github.com:square-root/metrics-thl-dev.git',
+      'branch': 'master'
+  },
+  'clickstream': {
+      'url': 'git@github.com:square-root/metrics-clickstream-dev.git',
+      'branch': 'master'
+  },
+  'demo3': {
+      'url': 'git@github.com:square-root/metrics-demo3-dev.git',
+      'branch': 'master'
+  },
+  'demo2': {
+      'url': 'git@github.com:square-root/metrics-demo2-dev.git',
+      'branch': 'master'
+  }
+}
