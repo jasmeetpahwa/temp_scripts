@@ -290,7 +290,7 @@ DE-2271:- added log rotation
 	DE-1933:- working on it.
 
 
-15th December:-
+17th December:-(half day)
     Nagbot notifications.
 
     Unexpected Files:-
@@ -320,29 +320,133 @@ DE-2271:- added log rotation
         UserSessionsTable:- failing due to clickstream data issue.
         SPAAutoUpdate_STEP_INTERMED:- Fixed(SQNKS-104)
 
-SQNKS-104:-
-    Investigated and fixed issue.
+    SQNKS-104:-
+        Investigated and fixed issue.
 
-DE-2693 and DE-2694 :-
-    Review points
-    Testing
+    DE-2693 and DE-2694 :-
+        Review points
+        Testing
 
-DE-2570:-
-    
-
-
+    DE-2570:-
+        worked on review points.
 
 
+18th December:-
+
+    Nagbot notifications
+
+    prd:-
+        AppAutoUpdate:- HTTP Error 403
+        AppPerfReport:- Feed issue(quarantine it)
+        NNA_Recommended%20Metrics:- investigate(from stldecompose import decompose)ask niral to install it at prd
+        SPAAutoUpdate_STEP_INTERMED:- Aborted by Niral
+
+    stg:-
+        PartsAutoUpdate:- TimeoutError in generating Excel Report.
+        AppPerfReport:- Feed issue(quarantine it)
+        PartsAutoUpdate_MI50_Accessories:- Failed due to failure of PartsAutoUpdate_MI50_Parts
+        CA_DOM_DSR:- TimeoutError in generating Excel Report.
+        Website Traffic Report:- TimeoutError in generating Excel Report.
+        PartsAutoUpdate_MI50_Parts:- TimeoutError in generating Excel Report.
+        AppAutoUpdate:- HTTP Error 403
+
+    dev:-
+        AppPerfReport:- Feed issue(quarantine it)
+        SPAAutoUpdate_STEP_DATAIMPORT:- Investigate it.
+        AppAutoUpdate:- HTTP Error 403
+        Dogfood:- failing due to clickstream data issue.
+        P360Engagement:- failing due to clickstream data issue.
+        UserSessionsTable:- failing due to clickstream data issue.
+
+    Other notifications:-
+        Data Quality check:- Unable to connect to server - ftp.biperf.com
+
+
+Checked Excel-stg-server.
+Keep an eye on ExcelServerStatusCheck.Result:- Excel-stg server giving timeout error.
+Quaranatined feed with the issue(App to RDR.xlsx)
+Excel Server not working.
+unable to connect to ftp.biperf.com(last connected to 17th November)
+
+NCI18-54:- completed it.
+
+DE-2570:- 
+    working on it.
+
+19th December:-
+
+    prd:-
+        NMAC_Recommended%20Metrics:- No module named stldecompose
+        AGP_IPRO_Reports:- failed due to pankaj changes.
+        NNA_Recommended%20Metrics:- No module named stldecompose
+        SPAAutoUpdate_STEP_INTERMED:- Aborted by Niral Patel
+
+    stg:- 
+        ES_Monthly_Reports:- WindowsError: [Error 32] The process cannot access the file because it is being used by another process
+        AGP_IPRO_Reports:- failed due to pankaj changes.
+        PartsAutoUpdate_MI50_Accessories:- Failed due to failure of PartsAutoUpdate_MI50_Parts
+        AppAutoUpdate:- HTTP Error 403
+        VWAutoUpdate:- investigate(storehub api issue)
+
+    dev:-
+        AGP_IPRO_Reports:- Connection closed by peer.
+        AppAutoUpdate:- HTTP Error 403
+        Dogfood:- failing due to clickstream data issue.
+        P360Engagement:- failing due to clickstream data issue.
+        UserSessionsTable:- failing due to clickstream data issue.
+        VWAutoUpdate:- investigate it.(storehub api issue)
+
+
+    Informed jason about feed.
+    review points of NCI18-54
+    DE-2570:- reading extended choice parameter jenkins
+            completed de-2570.
+            Ask niral about it.
+    ES18-77:- working on it.
+    SO18-131:- sending to sqs queue on time
+    helped Abhishek regarding SOA issue.
+
+
+20th December:-
+    prd:-
+    AppAutoUpdate
+
+    stg:-
+        PartsAutoUpdate_MI50_Accessories:- Failed due to PartsAutoUpdate_MI50_Parts
+        AGP_IPRO_Reports:- failed due to pankaj issue
+        PartsAutoUpdate_MI50_Parts:- no new feed to download(strict new data mode on)
+        AppAutoUpdate:- HTTP Error 403
+        ES_Monthly_Reports:- WindowsError: [Error 32] The process cannot access the file because it is being used by another process
+        VWAutoUpdate:- investigate(storehub api issue)
+
+    dev:-
+        SPAAutoUpdate_STEP_DATAIMPORT:- (Feed was already quarantined)make a ticket
+        Dogfood:- failing due to clickstream data issue.
+        P360Engagement:- failing due to clickstream data issue.
+        AppAutoUpdate:- HTTP Error 403
+        VWAutoUpdate:- investigate(storehub api issue)
+
+    Data Quality check:- hostname
+                            etl-prd-1.private.square-root.com
+                         server
+                            ftp.biperf.com
+    Investigated SPAAutoUpdate_STEP_DATAIMPORT:- Feed was already quarantined.
+    NCI18-54:- worked on review points.
+    close DE-2427 and AS18-374.
+    DE-2570:- 
+        added plugin and made code changes.
+    ES18-77:- 
+    discovered the date issue
+    it is in express service project
+    replied on SO18-158
 
 
 
 
 
 to-do:-
-Ask Abhishek about Nick's reply.
 Keep an eye on SO18-131(Also, send niral the queue name where we send the emails)(on saturday)
 discuss about MainframeAutoUpdate_STEP_LOAD(observe it till 21st December and then close DE-2427 and AS18-374)
-
 
 DE-1933 and DE-2406 are duplicates
 Also add to the table why this file is quarantined.
@@ -350,3 +454,6 @@ DE-2102
 
 mention in de-2694:-
 89 records in api and s3 have status difference.
+
+to-do:-
+reply jason back on AppPerfReport ticket.
