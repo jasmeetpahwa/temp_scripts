@@ -1,332 +1,3 @@
-3rd December:-
-    SOA-420:- Metrics validation
-    validated simple fact_metric
-
-    SO18-131:- Daily Sales Report emails 11 hours late
-    Understanding ticket.
-    Working on it.
-
-    SQNKS-44:-
-    Fixed jobs.
-
-4th December:-
-    SO18-131:- DSR emails late by 11 hour
-    Finding code where emails are sent.
-    officiating snakes and ladder.
-    The job responsible for sending DSR emails is trendi.
-    and we have sent emails from our side. The delay is from the app side.
-
-    find reason for stale data.
-
-    AS18-374:- Dealer master is updated too late on tuesdays.
-    finding reason
-    find if there is any dependency
-    removed dependency
-
-    DE-2570:-
-    Review points.
-
-    SOA-432:-
-    Made dashboard.
-
-    Unicorns stand up:- .5 hour
-    Internal stand up:- .5 hour
-
-5th December:-
-    SOA-432:- part 3
-    validated fact metric
-    validated simple fact_metric
-
-    SOA-433:- part 4
-    Made dashboards
-    validating fact metric
-
-    Unicorns standup:-
-    1 hour
-
-6th December:-
-    SOA-433:- part 4
-    validating fact_metric
-    validating simple fact_metric
-    
-    internal stand up:- .5 hour
-    unicorns stand up:- 1 hour
-
-7th December:-
-    SOA-433:-
-        validating simple_fact_metric
-
-    SO18-136:-
-        validated feed
-
-10th December:-
-    Build Runner:-
-        prd:-
-            PDMAutoUpdate_GET_Jenkins(Authentication Error)(investigate)
-            PartsAutoUpdate_PartSales (Confirmed_Install_Date column does not exists)(investigate)
-            SPAAutoUpdate_STEP_DATAIMPORT (Confirmed_Install_Date column does not exists)(investigate)
-
-            Skip:-
-                PDMAutoUpdate_GET_Misc_Sources (skip(failing due to drive_api_client issue))
-        
-        stg:-
-            AppAutoUpdate:- (No space left on device)
-            CA_DOM_DSR:- (No space left on device)
-            MainframeAutoUpdate_STEP_GET:- (No space left on device)
-            MainframeAutoUpdate_STEP_LOAD:- (No space left on device)
-            MainframeAutoUpdate_VPIPE:- (No space left on device)
-            NCIAutoUpdate_STEP_MAIN:- (No space left on device)
-            NMAC_Recommended Metrics:- (Memory Error)
-            RO_STEP_ROLLUP:- (No space left on device)
-            SPAAutoUpdate_STEP_SEND:- (No space left on device)
-            Website Traffic Report (Excel-stg-nissan-1 not working)(work on it)
-
-            Skip:-
-                PDMAutoUpdate_GET_Misc_Sources (skip(failing due to drive_api_client issue))
-                ESAnalytics_Report (skip)
-
-        dev:-
-            PartsAutoUpdate_PartSales (Confirmed_Install_Date column does not exists)(investigate)
-            SPAAutoUpdate_STEP_DATAIMPORT (Confirmed_Install_Date column does not exists)(investigate)
-
-            Skip:-
-                PDMAutoUpdate_GET_Misc_Sources (skip(failing due to drive_api_client issue))
-                SalesFunnelAutoUpdate (Sean is working on it. DB password not supplied)
-                CheckMissingMileStones (Skip)
-                VPipe_Sales_Ops (Michael is working on it)
-
-Investigated all jobs on all servers.
-
-SQNKS-69:-
-    Investigated Error
-    Quarantined feed
-
-SQNKS-70:-
-    investigating PDMAutoUpdate_GET_Jenkins
-    Reason:- ZipDMAAutoUpdate was in pending state from past 4 days. so it was not able to fetch its latest build number.
-
-NCI18-54:-
-    importing service retention daily feed
-
-internal stand up:- .5 hour
-unicorns stand up:- 50 min
-
-SQNKS-72:-
-    Made code changes
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-11th November:-
-    Nagbot notifications:-
-        Oracle DB password for SQRT360 will be expired on 13-OCT-18
-
-    prd:-
-        AppPerfReport (investigate) SQNKS:-74
-        AppAutoUpdate:- 403 forbidden
-
-    stg:-
-        AGP_IPRO_Reports:- fixed(in review SQNKS-72)
-        PartsAutoUpdate:- fixed(in review SQNKS-72)
-        AppPerfReport:- fixed(in review SQNKS-72)
-        PartsAutoUpdate_MI50_Accessories:- Investigate
-        PartsAutoUpdate_MI50_Parts:- fixed(in review SQNKS-72)
-        CA_DOM_DSR:- fixed(in review SQNKS-72)
-        Website Traffic Report:- fixed(in review SQNKS-72)
-        pg_backup: Aborted by Abhishek
-        ESAnalytics_Funnel:- Aborted by Abhishek
-        VPIPEMixMgmt:- Aborted by Abhishek
-        ESAnalytics_Report:- Investigate
-        SOA_Recommended Metrics:- Ignore
-        AppAutoUpdate:- 403 forbidden
-
-    dev:-
-        NMAC_Recommended Metrics:- investigate
-        PartsAutoUpdate_MI50_Accessories:- investigate
-        AppAutoUpdate:- 403 forbidden
-
-    failed sniffs:-
-        BrandFundDailyNSSI_CQTD_20181119.txt failed sniffs
-
-SQNKS-74:-
-    Quarantined feed
-
-P:-
-    Investigated NMAC_Recommended Metrics(Failing due to Index not set in dataframe)
-    Investigated PARTSAUTOUPDATE_MI50_ACCESSORIES(Failed due to failue of MAINFRAMEAUTOUPDATE_VPIPE_MTD)
-    Revalidating Subaru Metrics
-
-SQNKS-75:-
-    Oracle Password Check(beacuse on prd environment the job was failing to connect to sqlplus)
-    Oracle home config files
-
-NCI18-54:-
-
-Unicorns standup:-
-    45 mins
-
-
-12th December:-
-    failed sniffs:-
-        BrandFundDailyNSSI_CQTD_20181207.txt(contained 16 columns instead of 14)
-    unexpected files:-
-        NCI_Service_Retention20181210.csv
-        NNA_Infiniti_Monthly_Sales_201812110901.txt
-
-    prd:-(No new failure)
-        AppPerfReport(failed due to bad feed)
-        AppAutoUpdate:- HTTP Error 403
-
-    stg:-
-        PartsAutoUpdate:- Excel Server Issue
-        PartsAutoUpdate_MI50_Accessories:- Due to PartsAutoUpdate_MI50_Parts
-        AGP_IPRO_Reports:- Excel Server Issue
-        PartsAutoUpdate_MI50_Parts:- Excel Server Issue(triggered)
-        CA_DOM_DSR:- Excel Server Issue(triggered)
-        AppAutoUpdate:- 403 forrbidden error
-        SOA_Recommended Metrics:- Ask Abhishek
-        AppPerfReport:- Excel Server Issue(triggered)
-        AppAutoUpdate:- HTTP Error 403
-
-    dev:-
-        AppAutoUpdate:- HTTP Error 403
-        VPipe_Sales_Ops:- Michael is working on it.
-        Dogfood:- investigate
-        UserSessionsTable:- investigate
-        P360Engagement:- investigate
-
-Investigated:-
-    AppPerfReport
-    Dogfood:- failing due to clickstream data issue.
-    UserSessionsTable:- failing due to clickstream data issue.
-    P360Engagement:- failing due to clickstream data issue.
-
-DE-2271:- added log rotation
-
-13th December:-
-    failed sniffs:-
-        BrandFundDailyNSSI_CQTD_20181207.txt(contained 16 columns instead of 14)(Niral have commented out its mirroring in mirror_NCSI_NSSI_CQTD_Daily.sh)
-        Also can not insert beacuse it is append mode. It can be handled using HandleExtraColumns parameters.
-    unexpected files:-
-        test.txt (remote_path /nna_usai_leads)                                    Not inside ticket DE-2139
-        NCI_Service_Retention20181210.csv                                         Not inside ticket DE-2139
-        NNA_Infiniti_Monthly_Sales_201812110901.txt                               Inside DE-2139
-        NNA_Infiniti_Monthly_Service_201812120900.txt                             Inside DE-2139
-        NISSANINFINITIORDERS.ZIP(/mixmgmt_nnait/inbound/order_extracts)           Inside DE-2139
-
-    failed extractions:-
-        nna_org_2018-11-19.csv.pgp failed extraction(gpg: decryption failed: No secret key)
-
-    prd:-
-        AppPerfReport(feed issue)
-
-    stg:-
-        PartsAutoUpdate_MI50_Accessories:- Failed due to PartsAutoUpdate_MI50_Parts. 
-        PartsAutoUpdate_MI50_Parts:- (File already downloaded in previous build made by me.)
-        AppAutoUpdate:- HTTP Error 403
-        SOA_Recommended Metrics:- Assigned ticket to saurabh
-
-    dev:-
-        AppAutoUpdate:- HTTP Error 403
-        Update_NNA_Metrics:- Investigate
-        Dogfood:- failing due to clickstream data issue.
-        P360Engagement:- failing due to clickstream data issue.
-        UserSessionsTable:- investigate
-
-    Other failures:-
-        Data Plumber Failure:- Failure in processing message from topic 'sr.event.all' in transformation 'propagate_metrics' on 'PRD'.
-        Data Quality Check:- Unable to connect to server - ftp.biperf.com
-
-    P:-
-        investigated PartsAutoUpdate_MI50_Parts.(Reason was no new files to download)
-        Found if BrandFundDailyNSSI_CQTD_20181207 can be imported
-
-    DE-1933:-
-        findind location where logging is done
-        finding cause of duplication
-        reading kafka documentation.
-
-    DE-2693:- Final changes and testing
-
-    DE-2694:- Final changes and testing
-
-
-14th December:-
-    Build runner stuff:- Nagbot and brdash
-
-    prd:-
-        AppPerfReport
-
-    stg:-
-        AGP_IPRO_Reports:- Ask Pankaj to fix it.
-
-    dev:-
-        Dogfood:- failing due to clickstream data issue.
-        P360Engagement:- failing due to clickstream data issue.
-        UserSessionsTable:- failing due to clickstream data issue.
-        AppAutoUpdate:- HTTP Error 403
-
-    failed extractions:-
-        TQ20181204NISSAN.zip.gpg failed extraction:- gpg: decryption failed: No secret key
-        nna_org_2018-12-05.csv.pgp:- gpg: decryption failed: No secret key
-
-    Unexpected File:- 
-        Unexpected file: Infiniti_Certification_20181123.csv
-
-    Other failures:-
-        Data Quality Check:- Unable to connect to server - ftp.biperf.com
-        Data Plumber Failure:- Failure in processing message from topic 'sr.event.all' in transformation 'propagate_metrics' on 'PRD'.
-
-	DE-1933:- working on it.
-
-
-17th December:-(half day)
-    Nagbot notifications.
-
-    Unexpected Files:-
-        NIS_SalesPen_R12_20181127.dat.PGP
-        Infiniti_Certification_20181213.csv
-        NCI_Service_Retention20181103.csv
-        NNA_Infiniti_Monthly_Sales_201812120900.txt
-
-    Failed Sniffs:-
-
-    Failed Extractions:-
-        nna_org_2018-11-15.csv.pgp
-
-    prd:-
-        AppPerfReport(feed issue)
-
-    stg:-
-        NMAC_Recommended Metrics:-  MemoryError
-        PartsAutoUpdate:- sq_util._excel_reporting.timeout.TimeoutError
-        CA_DOM_DSR:- sq_util._excel_reporting.timeout.TimeoutError
-        Website Traffic Report:- sq_util._excel_reporting.timeout.TimeoutError
-        SPAAutoUpdate_STEP_INTERMED:- Fixed(SQNKS-104)
-
-    dev:- 
-        Dogfood:- failing due to clickstream data issue.
-        P360Engagement:- failing due to clickstream data issue.
-        UserSessionsTable:- failing due to clickstream data issue.
-        SPAAutoUpdate_STEP_INTERMED:- Fixed(SQNKS-104)
-
-    SQNKS-104:-
-        Investigated and fixed issue.
-
-    DE-2693 and DE-2694 :-
-        Review points
-        Testing
-
     DE-2570:-
         worked on review points.
 
@@ -441,6 +112,55 @@ DE-2570:-
     replied on SO18-158
 
 
+21st December:-
+    prd:- 
+        AppAutoUpdate:- HTTP Error 403
+
+    stg:-
+        ES_Monthly_Reports:- WindowsError
+        AGP_IPRO_Reports:- pankaj issue
+        AppAutoUpdate:- HTTP Error 403
+
+    dev:- 
+        SPAAutoUpdate_STEP_METADATA:- Ask Abhishek
+        VWAutoUpdate:- Storehub API Issue
+        Dogfood:- failing due to clickstream data issue.
+        P360Engagement:- failing due to clickstream data issue.
+        UserSessionsTable:- failing due to clickstream data issue.
+
+    Nagbot:-
+        Data Quality check:- Unable to connect to ftp.biperf.com (from stg)
+
+    ES18-77:- 
+        
+    
+
+
+26th December:-
+
+    DE-2728:-
+        see estimates.txt
+
+    DE-2503:-
+        see estimates.txt
+
+    sqnks stand up:- 1 hour
+        
+
+27th December:-
+
+    DE-2503:-
+        Made code changes.
+    DE-2728:-
+        rfugu
+
+28th December:-
+    DE-2728:-completed
+    DE-2503:- completed
+    DE-2694:- final review and commi
+
+
+
 
 
 
@@ -454,6 +174,3 @@ DE-2102
 
 mention in de-2694:-
 89 records in api and s3 have status difference.
-
-to-do:-
-reply jason back on AppPerfReport ticket.
