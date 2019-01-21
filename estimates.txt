@@ -1,0 +1,161 @@
+8th January:-
+
+    Time sheet:- 30 mins
+    SQNKS-198:- notor_customer_engage_pct showing error on visits (aka no data)	for dealer 5704.
+        understanding ticket.
+        its because it is opt_out and its notor status is 3.So, its data is not collected and opt_out date is 20180322.
+        
+    Investigated nciautoupdate_main failure(service retention daily.)
+
+    Added manual step for SPAAutoUpdate_Notor job:- 20 mins.
+    Added and ran manual step for DE-2693 and DE-2694.
+
+    DE-2503:- Break split.json per release/hotfix
+        Made separate steps file for release-20190111.
+        Tested changes
+        Resolved conflicts.
+
+    ACCS18-35:- Mirrorfiles process for VPC data extract
+        check if current keys are working for decryption of the pgp file.
+        and what we need in order to decrypt it.
+        Tring different to open the file.
+
+    Sqnks standup:- 1 hour
+    Resolve conflicts for DE-2503.
+
+9th January:-
+    ACCS18-35:- added script call.
+    ACCS18-36:- Importing VPC data extracts
+        Understanding ticket.
+        Understanding file structure.
+        Understanding transform script by joachim
+        understanding script bpcWrapper.sh
+        understanding script convert_fixed_to_delimited.sh
+        understanding script bulkloadwrapper.sh
+        coding
+        testing
+
+    Looker Insight Automation testing.
+    SQNKS stand up:- 1 hour
+
+10th January:-
+    checking mails.
+    Add column names for ACCS18-36 import.(asked by joachim)
+    Make changes for ACCS18-35.(asked by joachim)
+
+    sqnks-55:- 
+        uninstall datagrip
+        install datagrip
+        setup athena
+        check if the table exists.
+
+    MAFY18-140:- AGP/IPRO Corporate Quarterly Report.
+        Understanding scripts(apg_irpo_corporate_report)
+        Make sql changes.
+        Make pyhton changes
+        Testing.
+
+        sqnks stand up:- 1 hour 10 mins
+
+11th January:-
+    Checked AppAutoUpdate.
+    Looker Insights testing
+
+14th January:-
+    Looker Insights testing
+
+15th January:-
+    Looker Insights testing(Looker_Connection.py)
+
+16th January:-
+    Final testing.
+    AS18-466:- Understanding Ticket.(Load process for division, region, area, and district financial data (aka composite data))
+            coding
+            testing
+
+    MAFY18-140:- review points()AGP/IPRO Corporate Quarterly Report
+    testing.
+    SQNKS-240:-(Find Polk Loyalty Data feed from polk sftp server and mirror it)
+    find password.
+    find feed.
+    mirror it.
+    discussion with carlos and michael
+
+17th January:-
+    SQNKS-240:-Find Polk Loyalty Data feed from polk sftp server and mirror it.
+    sqnks-238:- test soa metrics.
+    sqnks-127:-NMAC: Create App Packet
+        understanding scripts.
+    insoght looker Automation testing:- discussion with andrea and carlos.
+
+18th January:-
+    sqnks-127:-NMAC: Create App Packet.
+    code.
+    find tables.
+    write sql for tables.
+    test.
+
+    sqnks-254:- 
+        Finding reason for the cause.
+
+    sqnks-256:-
+        Investigated job.
+		
+	as18-465:-
+        code
+        find password for pgp decrypt
+        test
+
+21st January:-
+    build runner dashboard
+    nagbot messages
+
+    AS18-465:- 
+        write mirror and import calls
+
+    SQNKS-254:-
+        commented out retry logic.
+        tested code.
+
+    SQNKS-265:-
+        find the cause.
+        find modification time issue(in mirror files)
+        quarantine feeds.
+
+    SQNKS-266:-
+        find the cause.
+
+    SQNKS-267:-
+        Investigated ES_Monthly_Reports
+
+    Investigated SPAAutoUpdate_STEP_SEND_THIRDPARTY(stuck due to AppAutoUpdate)
+    Investigated CloseNagBotEvents
+    Investigated ResendNotifications
+    SQNKS-268:-
+        Investigated trendi
+
+    Investigated NMAC_Recommended Metrics
+    Investigated Update_PDM_Metrics
+    resolve release issue.
+
+    ACCS18-38:-
+        find cause
+        fixed and tested changes.
+
+    
+
+to-do by EOD:-
+    Reply on Abhishek's message on slack.
+    Reply on joachim's message on slack.
+
+to-do by EOD:-
+    Reply on SO18-131
+    check why AppAutoUpdate is taking too long
+    test calls in AS18-465
+
+
+to-do:-
+    Close MainFrameAutUpdate tickets(blocking jobs)
+    Ask Niral to review DE-2570.
+    Ask Niral to tell about sunset AppAutoUpdate.
+    Make a ticket to check if app side is consuming data packet so18-39.
