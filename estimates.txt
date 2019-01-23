@@ -142,11 +142,109 @@
         find cause
         fixed and tested changes.
 
-    
+22nd January:-
+    AS18-455:-
+        worked on review points
+        tested changes
 
-to-do by EOD:-
-    Reply on Abhishek's message on slack.
-    Reply on joachim's message on slack.
+    AS18-466:-
+        worked on review points
+        tested changes
+
+    nagbot messages
+    build runner dashboard
+    prd failures:-
+
+    stg failures:-
+        Investigated SPAAutoUpdate_STEP_GET(failing due to decryp issue, has been fixed on dev)
+        Investigated ES_Monthly_Reports(could not generate report on excel stage server)
+        Investigated NNA_FIN(has not run because of failure of SPAAutoUpdate_STEP_GET)
+
+    dev failure:-
+        to be investigated:-
+            SQNKS-230:- Investigated CloseNagBotEvents(failing due to snowflake package issue)
+            SQNKS-230:- Investigated ResendNotifications(failing due to snowflake package issue)
+            Investigated Update_PDM_Metrics
+            SQNKS-271:- Investigated SPAAutoUpdate_STEP_DATAIMPORT
+
+    Unexpected file:-
+        Infiniti_Certification_20190121.csv
+
+    Looker Insights Automation Testing
+
+23rd January:-
+    ACCS18-38:-
+        Updated metadata for feed NNA2SQRT*
+
+    nagbot notifications
+    build runner dashboard
+
+    Unexpected Files:-
+        NNA_Infiniti_Monthly_Service_201901200900.txt(seems to be a new feed)
+        NNA_Infiniti_Monthly_Sales_201901200900.txt(seems to be a new feed)
+        Infiniti_AllFields_woNatl.xlsx(seems to be a new feed)
+        Infiniti_Certification_20190122.csv(seems to be a new feed)
+        SQNKS-281:- nna_org_2019-01-22.csv.pgp failed extraction
+                    Remote path:/nna_peoplesoft/inbound/hr/prod/v2
+
+    Failures:-
+        prd:-
+            SQNKS-280:- nciautoupdate_main()
+            inform Mark about NNA_FIN(Assertion was the last step of job)
+
+        stg:- 
+            ES_Monthly_Reports
+            nciautoupdate_main
+            SQNKS-282:- SPAAutoUpdate_STEP_DATAIMPORT
+            SQNKS-230:- Investigated CloseNagBotEvents and ResendNotifications(failing due to snowflake package issue)
+
+        dev:- nciautoupdate_main
+
+    SQNKS-127:-
+
+
+
+
+
+
+
+
+
+
+
+
+
+    to-do:-
+        why spa_get didnt failed on prd(because in prd scripts we are still mirroring TST files.changes are not there yet.)
+        look into Update_PDM_Metrics
+
+        add hotfix for AppAutoUpdate
+				check on ACCS18-38.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 to-do by EOD:-
     Reply on SO18-131
