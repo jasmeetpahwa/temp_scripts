@@ -203,23 +203,97 @@
     SQNKS-127:-
 
 
+24th January:-
+    Build runner dashboard
+    nagbot notifications
+
+    Failures:-
+        prd:-
+
+
+        stg:-
+            ES_Monthly_Reports
+                Reason:- Could not generate excel report on excel-stg-1. 
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-267
+
+            CloseNagBotEvents and ResendNotifications:
+                Reason:- Failed due to a missing package snowflake
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-230            
+
+        dev:-
+            Update_NCI_Metrics, PDMAutoUpdate_PROPAGATE, Update_Jenkins_Metrics, Update_NMAC_Metrics, Update_Demo_Metrics
+                Reason:-
+                    There was a permission denied error for a relation test on pg-metrics-dev-1.
+                Action taken:-
+                    Assuming someone made it for testing purpose and forgot to drop.
+                    I dropped relation test.
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-286
 
 
 
+    Unexpected files:-
+        NNA_Infiniti_Monthly_Service_201901230900.txt(seems to be a new file)
+
+    Failed sniffes:-
+        NISSAN_DATAFEED_R3_201512.csv
+            Ticket:- https://square-root.atlassian.net/browse/SQNKS-287
+
+        InfPMAPenetration_R12_20190123.txt.PGP
+            Ticket:- https://square-root.atlassian.net/browse/SQNKS-288
+
+SQNKS-275:-
+    Investigated the issue.(Phone number not showing for dealers)
+SQNKS-127:-NMAC App Packet
+
+25th January:-
+
+    nagbot notifications
+    build runner dashboard
+
+    Failures:-
+
+prd:-
+    NMACAutoUpdate:-
+        Reason:-
+        Ticket:- https://square-root.atlassian.net/browse/SQNKS-291
+
+stg:-
+    CloseNagBotEvents and ResendNotifications:
+        Reason:- Failed due to a missing package snowflake
+        Ticket:- https://square-root.atlassian.net/browse/SQNKS-230
+
+    ES_Monthly_Reports
+        Reason:- Could not generate excel report on excel-stg-1. 
+        Ticket:- https://square-root.atlassian.net/browse/SQNKS-267
+
+    NMACAutoUpdate:-
+        Reason:-
+        Ticket:- https://square-root.atlassian.net/browse/SQNKS-291
+
+dev:-
+    NMACAutoUpdate:-
+        Reason:-
+        Ticket:- https://square-root.atlassian.net/browse/SQNKS-291
 
 
-
+AS18-465 and AS18-466:- Testing
+    Could not load large files.
+    Working on importing large files.
+    made code changes
+    tested changes
+ACCS18-41:-
+    Understanding Ticket.
 
 
 
 
 
     to-do:-
-        why spa_get didnt failed on prd(because in prd scripts we are still mirroring TST files.changes are not there yet.)
-        look into Update_PDM_Metrics
-
-        add hotfix for AppAutoUpdate
-				check on ACCS18-38.
+        ask abhishek for this tomorrow:- check for added extra columns in stg_internal_users and stg_dealer_users tables(in manual step look aloke scripts)
+        test changes in of AS18-465 and AS18-466 on dev after NNA_FIN is run on stg and prd.
+        work on ACCS18-41.
+        trigger nmac_data_pull job on d360_jenkins server after NMACAutoUpdate is successful.
+        move composite cals file back to test folder after NNA_FIN run.
 
 
 
