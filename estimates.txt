@@ -252,48 +252,201 @@ SQNKS-127:-NMAC App Packet
 
     Failures:-
 
-prd:-
-    NMACAutoUpdate:-
-        Reason:-
-        Ticket:- https://square-root.atlassian.net/browse/SQNKS-291
+        prd:-
+            NMACAutoUpdate:-
+                Reason:-
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-291
 
-stg:-
-    CloseNagBotEvents and ResendNotifications:
-        Reason:- Failed due to a missing package snowflake
-        Ticket:- https://square-root.atlassian.net/browse/SQNKS-230
+        stg:-
+            CloseNagBotEvents and ResendNotifications:
+                Reason:- Failed due to a missing package snowflake
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-230
 
-    ES_Monthly_Reports
-        Reason:- Could not generate excel report on excel-stg-1. 
-        Ticket:- https://square-root.atlassian.net/browse/SQNKS-267
+            ES_Monthly_Reports
+                Reason:- Could not generate excel report on excel-stg-1. 
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-267
 
-    NMACAutoUpdate:-
-        Reason:-
-        Ticket:- https://square-root.atlassian.net/browse/SQNKS-291
+            NMACAutoUpdate:-
+                Reason:-
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-291
 
-dev:-
-    NMACAutoUpdate:-
-        Reason:-
-        Ticket:- https://square-root.atlassian.net/browse/SQNKS-291
+        dev:-
+            NMACAutoUpdate:-
+                Reason:-
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-291
 
 
-AS18-465 and AS18-466:- Testing
-    Could not load large files.
-    Working on importing large files.
-    made code changes
-    tested changes
-ACCS18-41:-
-    Understanding Ticket.
+        AS18-465 and AS18-466:- Testing
+            Could not load large files.
+            Working on importing large files.
+            made code changes
+            tested changes
+        ACCS18-41:-
+            Understanding Ticket.
+
+
+28th January:-
+
+    Nagbot notifications
+    Build runner dashboard
+
+    `Failures:-`
+        `prd`:-
+            `ESAnalytics_Report`
+                Reason:- process killed
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-293
+
+            `SPAAutoUpdate_STEP_INTERMED`:-
+                Reason:- Data for dealer 70556 was incomplete in dealer data feed.
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-294
+
+        `stg`:-
+            `CloseNagBotEvents and ResendNotifications:`
+                Reason:- Failed due to a missing package snowflake
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-230
+
+            `ES_Monthly_Reports`
+                Reason:- Could not generate excel report on excel-stg-1. 
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-267
+
+            `AGP_IPRO`
+                Reason:- Data was updated unexpectedly for 2 of the dealers(Assertion Failure)
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-295
+
+            `SPAAutoUpdate_STEP_INTERMED`:-
+                Reason:- Data for dealer 70556 was incomplete in dealer data feed.
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-294
+
+        `dev:-`
+            `AGP_IPRO`
+                Reason:- Data was updated unexpectedly for 2 of the dealers(Assertion Failure)
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-295
+
+            `SPAAutoUpdate_STEP_INTERMED:-`
+                Reason:- Data for dealer 70556 was incomplete in dealer data feed.
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-294
+
+            `Update_PDM_Metrics:-`
+                Reason:-
+                Ticket:-
+
+ACCS18-41:- Code.
+Testing.
+
+SQNKS-127:- Testing.
+
+    Unexpected Files:-
+        Infiniti_Certification_20190124.csv(seems to be a new feed)
+        NNA_Infiniti_Monthly_Service_201901240900.txt(seems to be a new feed)
+        NCI_Service_Retention_201901_20190121.csv(add it in metadata)
+
+
+29th January:-
+
+    Nagbot notifications
+    build runner dashboard
+
+    `prd`
+        `Latefiles_Notifications`
+            Reason:- Job was not able to connect to pg-dev-vw-1
+            Ticket:- https://square-root.atlassian.net/browse/SQNKS-298
+
+        `ESAnalytics_Report`
+            Reason:- process killed
+            Ticket:- https://square-root.atlassian.net/browse/SQNKS-293
+
+    `stg`
+        `Latefiles_Notifications`
+            Reason:- Job was not able to connect to pg-dev-vw-1
+            Ticket:- https://square-root.atlassian.net/browse/SQNKS-298
+
+        `ES_Monthly_Reports`
+            Reason:- Could not generate excel report on excel-stg-1. 
+            Ticket:- https://square-root.atlassian.net/browse/SQNKS-267
+
+    `dev`
+        `Latefiles_Notifications`
+            Reason:- Job was not able to connect to pg-dev-vw-1
+            Ticket:- https://square-root.atlassian.net/browse/SQNKS-298
+
+        `VWAutoUpdate`
+            Reason:- No space left on device
+            Ticket:- https://square-root.atlassian.net/browse/SQNKS-299
+
+
+
+
+    `Unexpected files`
+        Infiniti_Certification_20190126.csv(seems to be new feed)
+
+
+    
+    AS18-466:-
+        Minor fix(rearranging of columns)
+
+    P:-
+       Keep an eye on NCI retention file as asked by Qiong
+
+    Looker insight testing tool.
+    testing of SQNKS-127.
+    MAFY18-144:- 
+        Understanding Ticket
+        making changes
+
+30th January:-
+    nagbot notifications
+    build runner dashboard 
+
+    `Build Failures`
+        `prd`
+            `ESAnalytics_Report`
+                Reason:- process killed
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-293
+
+            `AGP_IPRO`
+                Reason:- Assertion Failure, PSAT data updated unexpectedly
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-306
+
+        `stg`
+            `AGP_IPRO`
+                Reason:- Assertion Failure, PSAT data updated unexpectedly
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-306        
+
+        `dev`
+            `AGP_IPRO`
+                Reason:- Assertion Failure, PSAT data updated unexpectedly
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-306
+
+
+    MAFY18-144:-
+        Completed it.
+
+    INF18-15:-
+        Understand
+        code changes
+        metadata changes 
+        test
+
+    SQNKS-127:-
+        Testing
+        Finding files which are required.
+
+    P:- 
+        Handled NNA_FIN
+
+31st January:-
+
+    
 
 
 
 
 
     to-do:-
-        ask abhishek for this tomorrow:- check for added extra columns in stg_internal_users and stg_dealer_users tables(in manual step look aloke scripts)
-        test changes in of AS18-465 and AS18-466 on dev after NNA_FIN is run on stg and prd.
-        work on ACCS18-41.
-        trigger nmac_data_pull job on d360_jenkins server after NMACAutoUpdate is successful.
-        move composite cals file back to test folder after NNA_FIN run.
+        ask abhishek for this tomorrow:- check for added extra columns in stg_internal_users and stg_dealer_users tables(in manual step look alike scripts)
+        add comment in SQNKS-127 that profiles feed will not be loaded.
+        make chef changes for SQNKS-281
+        Trigger SPAAutoUpdate_STEP_LOOKER_DATA_GENERATION after 30 minsnow(7:53)
 
 
 
@@ -307,26 +460,10 @@ ACCS18-41:-
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-to-do by EOD:-
-    Reply on SO18-131
-    check why AppAutoUpdate is taking too long
-    test calls in AS18-465
 
 
 to-do:-
+    Reply on SO18-131
     Close MainFrameAutUpdate tickets(blocking jobs)
     Ask Niral to review DE-2570.
     Ask Niral to tell about sunset AppAutoUpdate.
