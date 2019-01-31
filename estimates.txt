@@ -436,8 +436,73 @@ SQNKS-127:- Testing.
 
 31st January:-
 
-    
+    `Build Failures`
+        `prd`
+            `ESAnalytics_Report`
+                Reason:- process killed
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-293
 
+            `PartsAutoUpdate_PartSales`
+                Reason:- Bad feed
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-311
+
+            `NNA_FIN`
+                Reason:- Assertion failure, Dealer count less than 95 percent(New feed didn't load properly)
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-310
+
+            `SPAAutoUpdate_STEP_DATAIMPORT`
+                Reason:- Bad feed
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-311
+
+
+        `stg`
+            `PartsAutoUpdate_PartSales`
+                Reason:- Bad feed
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-311
+
+            `NNA_FIN`
+                Reason:- Assertion failure, Dealer count less than 95 percent(New feed didn't load properly)
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-310
+
+            `SPAAutoUpdate_STEP_DATAIMPORT`
+                Reason:- Bad feed
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-311
+
+            `SPAAutoUpdate_STEP_LOOKER_DATA_GENERATION`
+                Reason:-
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-314 
+
+        `dev`
+            `PartsAutoUpdate_PartSales`
+                Reason:- Bad feed
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-311
+
+            `NNA_FIN`
+                Reason:- Assertion failure, Dealer count less than 95 percent(New feed didn't load properly)
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-310
+
+            `SPAAutoUpdate_STEP_DATAIMPORT`
+                Reason:- Bad feed
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-311
+
+            `SPAAutoUpdate_STEP_LOOKER_DATA_GENERATION`
+                Reason:-
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-314
+
+
+Tickets to work on:-
+    SQNKS-310:-
+        steps to do for it on stg and prd after job runs successful on dev
+            quarantine files mirrored yesterday
+            delete data from tables manually
+            delete entry from FinancialDataFilesLoaded.txt
+    SQNKS-266:- Done
+    MAFY18-144:- Done
+    INF18-15:- Done(Make review changes)
+    MAA-59:- Done
+    SQNKS-311:- Done
+
+Revert changes for SQNKS-281
 
 
 
@@ -446,7 +511,6 @@ SQNKS-127:- Testing.
         ask abhishek for this tomorrow:- check for added extra columns in stg_internal_users and stg_dealer_users tables(in manual step look alike scripts)
         add comment in SQNKS-127 that profiles feed will not be loaded.
         make chef changes for SQNKS-281
-        Trigger SPAAutoUpdate_STEP_LOOKER_DATA_GENERATION after 30 minsnow(7:53)
 
 
 
