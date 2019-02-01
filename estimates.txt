@@ -498,19 +498,42 @@ Tickets to work on:-
             delete entry from FinancialDataFilesLoaded.txt
     SQNKS-266:- Done
     MAFY18-144:- Done
-    INF18-15:- Done(Make review changes)
+    INF18-15:- Done
     MAA-59:- Done
     SQNKS-311:- Done
 
-Revert changes for SQNKS-281
 
 
+1st Feb:-
+
+    Nagbot notifications
+    Build Runner dashboard
+
+    `Build Failures`
+        `prd`
+            `ESAnalytics_Report`
+                Reason:- process killed
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-293   
+
+            `AGP_IPRO`
+                Reason:-
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-355     
+
+        `stg`
+
+        `dev`        
+            `AGP_IPRO`
+                Reason:- process killed
+                Ticket:- https://square-root.atlassian.net/browse/SQNKS-355
 
 
+SQNKS-238:-
+    Refactoring
+P:- 
+    handled ResendNotifications and CloseNagBotEvents on dw-admin-prd-1
+    handled AGP_IPRO_Reports on stg
     to-do:-
-        ask abhishek for this tomorrow:- check for added extra columns in stg_internal_users and stg_dealer_users tables(in manual step look alike scripts)
-        add comment in SQNKS-127 that profiles feed will not be loaded.
-        make chef changes for SQNKS-281
+        Get INF18-15 reviewed from abhishek and add its cherry-pick
 
 
 
@@ -527,8 +550,4 @@ Revert changes for SQNKS-281
 
 
 to-do:-
-    Reply on SO18-131
     Close MainFrameAutUpdate tickets(blocking jobs)
-    Ask Niral to review DE-2570.
-    Ask Niral to tell about sunset AppAutoUpdate.
-    Make a ticket to check if app side is consuming data packet so18-39.
