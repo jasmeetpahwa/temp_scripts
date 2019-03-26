@@ -86,7 +86,7 @@
     sqnks-238:- test soa metrics.
     sqnks-127:-NMAC: Create App Packet
         understanding scripts.
-    insoght looker Automation testing:- discussion with andrea and carlos.
+    insight looker Automation testing:- discussion with andrea and carlos.
 
 18th January:-
     sqnks-127:-NMAC: Create App Packet.
@@ -534,20 +534,7 @@ P:-
     handled AGP_IPRO_Reports on stg
     to-do:-
         Get INF18-15 reviewed from abhishek and add its cherry-pick
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 to-do:-
     Close MainFrameAutUpdate tickets(blocking jobs)
+
+    
