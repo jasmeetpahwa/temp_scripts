@@ -1,0 +1,314 @@
+4th Feb:-
+    Time sheet:-             Completed                               2 hour
+    Calyx setup:-            Completed        
+    CP-4143:-                Completed
+    Reading Docmentation     in progress(scoring algo pending)
+
+5th Feb:-
+    CP-4140:-
+        WiFi not working.
+        Company reporting google docs and visualization.
+        Understading changes made in sg_DS-212.
+        Comparing scripts
+        Understading Manage.py        
+        CP-4198
+        Fix rdp_stage_order
+
+6th Feb:-
+    Review points of jp_CP-4198
+    tested changes of branches CP-3218(Done), CP-3222(No need), CP-3254(Done) ,CP-3260(Already merged)
+    Validating datapoints in company reporting.
+    Understading data(datapoint view, datapoint model)
+    Understading AppTableImporter, test_data.py
+    Resolved Conflicts
+    KT
+    sql folders to cover:- 
+        denormalization  DONE
+        clean            DONE
+        transform
+        deliver
+
+
+    to-do:-
+        Understand Engagement reports
+
+7th Feb:-
+    Validating datapoints.
+
+8th Feb:-
+    Validating datapoints.
+
+11th Feb:- 
+    Validating datapoints
+    Making necessary changes to merge code into master
+    Updated metadata
+    Metadata for 1 datapoint_view found missing.(BEST_SOURCE_TIME_RD)
+    read about emr cluster
+    JPL prize distribution.
+    ML documentation(intro and supervised learning part 1)
+
+12th Feb:-
+    ML Documentation(SL part2,3, Unsupervised learning, neural nets and deep learning, reinforcement learning)
+    scikit-learn
+
+13th Feb:-
+    read about different libraries for machine learning(scikit, tensorflow, theano, keaser)
+    Scikit-learn documentation
+    Discussing approaches for college clustering.
+    CP-4154:-
+        Understading scoring algo
+
+14th Feb:-
+    Understading scoring algo
+    Understading scripts
+    found cause of the problem
+
+18th Feb:-
+    CP-4154:-
+        testing solution.
+        insert problem.
+        elastic search problem.
+        Tested changes.
+
+    CP-4298:-
+        Completed and tested.
+
+    network issue.(Discussion with prabhasis)
+
+19th Feb:-
+    CP-4298:-
+        Review changes
+        tested changes
+
+    CP-4297:-
+        read about and setup mongo
+        setup db
+        got and imported into mongodb data
+        Suggestions:-
+            Can use location
+    
+    resolved wifi issue.
+
+20th Feb:-
+    CP-4297:-
+        Investigating factors which can be used in suggesting pools to companies.
+        explored mongodb query language
+        explored data cleaning
+        Suggestions:-
+            make graphs for location, skills, education
+
+21st Feb:-
+    make sql for files to be delivered at s3 bucket.
+    
+22nd Feb:-    
+    resolved sys.ps2 error
+    resolved metadata issue
+    resolved column mismatch issue
+    CP-4412:-
+    cp-4429:-
+BEST_SOURCE_TIME_POS
+
+25rd feb:-
+    CP-4429:- 
+        There are some datapoints for which we dont have any data.
+        I am setting them inactive.
+            BEST_SOURCE_TIME_POS, Data Point : BEST_SOURCE_WRT_TIME, for deliver table : Reporting_Deliver.data_points_014 is 0
+            BEST_SOURCE_TIME_POS, Data Point : BEST_SOURCE_WRT_TIME, for deliver table : Reporting_Deliver.data_points_014 is 0
+            OFFERED_CANDIDATES_POS_SOURCE, Data Point : OFFERED_CANDIDATES, for deliver table : Reporting_Deliver.data_points_016 is 0
+            OFFERED_CANDIDATES_POS_SOURCE, Data Point : OFFERED_CANDIDATES, for deliver table : Reporting_Deliver.data_points_016 is 0
+            TOTAL_TIME_INVESTED_POS_SOURCE, Data Point : TOTAL_TIME_INVESTED, for deliver table : Reporting_Deliver.data_points_016 is 0
+            TOTAL_TIME_INVESTED_POS_SOURCE, Data Point : TOTAL_TIME_INVESTED, for deliver table : Reporting_Deliver.data_points_016 is 0
+            OFFERED_CANDIDATES_POS_TENTH_ACADEMIC_GROUP, Data Point : OFFERED_CANDIDATES, for deliver table : Reporting_Deliver.data_points_021 is 0
+            OFFERED_CANDIDATES_POS_TENTH_ACADEMIC_GROUP, Data Point : OFFERED_CANDIDATES, for deliver table : Reporting_Deliver.data_points_021 is 0
+            OFFERED_CANDIDATES_POS_WORK_EX, Data Point : OFFERED_CANDIDATES, for deliver table : Reporting_Deliver.data_points_022 is 0
+            OFFERED_CANDIDATES_POS_WORK_EX, Data Point : OFFERED_CANDIDATES, for deliver table : Reporting_Deliver.data_points_022 is 0
+            OFFERED_CANDIDATES_POS_GENDER, Data Point : OFFERED_CANDIDATES, for deliver table : Reporting_Deliver.data_points_023 is 0
+            OFFERED_CANDIDATES_POS_GENDER, Data Point : OFFERED_CANDIDATES, for deliver table : Reporting_Deliver.data_points_023 is 0
+            OFFERED_CANDIDATES_POS_COLLEGE, Data Point : OFFERED_CANDIDATES, for deliver table : Reporting_Deliver.data_points_025 is 0
+            OFFERED_CANDIDATES_POS_COLLEGE, Data Point : OFFERED_CANDIDATES, for deliver table : Reporting_Deliver.data_points_025 is 0
+            TIME_INVESTED_SELECTIONS_POS_SOURCE, Data Point : TIME_INVESTED_SELECTIONS, for deliver table : Reporting_Deliver.data_points_016 is 0
+            TIME_INVESTED_SELECTIONS_POS_SOURCE, Data Point : TIME_INVESTED_SELECTIONS, for deliver table : Reporting_Deliver.data_points_016 is 0
+            TIME_INVESTED_REJECTIONS_POS_SOURCE, Data Point : TIME_INVESTED_REJECTIONS, for deliver table : Reporting_Deliver.data_points_016 is 0
+            TIME_INVESTED_REJECTIONS_POS_SOURCE, Data Point : TIME_INVESTED_REJECTIONS, for deliver table : Reporting_Deliver.data_points_016 is 0
+            OFFERED_CANDIDATES_POS_TWELFTH_ACADEMIC_GROUP, Data Point : OFFERED_CANDIDATES, for deliver table : Reporting_Deliver.data_points_021 is 0
+            OFFERED_CANDIDATES_POS_TWELFTH_ACADEMIC_GROUP, Data Point : OFFERED_CANDIDATES, for deliver table : Reporting_Deliver.data_points_021 is 0
+            OFFERED_CANDIDATES_POS_GRADUATION_ACADEMIC_GROUP, Data Point : OFFERED_CANDIDATES, for deliver table : Reporting_Deliver.data_points_021 is 0
+            OFFERED_CANDIDATES_POS_GRADUATION_ACADEMIC_GROUP, Data Point : OFFERED_CANDIDATES, for deliver table: Reporting_Deliver.data_points_021 is 0
+            OFFERED_CANDIDATES_POS_TENTH_NORM_ACADEMIC_GROUP, Data Point : OFFERED_CANDIDATES, for deliver table : Reporting_Deliver.data_points_021 is 0
+            OFFERED_CANDIDATES_POS_TENTH_NORM_ACADEMIC_GROUP, Data Point : OFFERED_CANDIDATES, for deliver table: Reporting_Deliver.data_points_021 is 0
+            OFFERED_CANDIDATES_POS_TWELFTH_NORM_ACADEMIC_GROUP, Data Point : OFFERED_CANDIDATES, for deliver table :Reporting_Deliver.data_points_021 is 0
+            OFFERED_CANDIDATES_POS_TWELFTH_NORM_ACADEMIC_GROUP, Data Point : OFFERED_CANDIDATES, for deliver table : Reporting_Deliver.data_points_021 is 0
+            OFFERED_CANDIDATES_POS_GRADUATION_NORM_ACADEMIC_GROUP, Data Point : OFFERED_CANDIDATES, for deliver table : Reporting_Deliver.data_points_021 is 0
+            OFFERED_CANDIDATES_POS_GRADUATION_NORM_ACADEMIC_GROUP, Data Point : OFFERED_CANDIDATES, for deliver table : Reporting_Deliver.data_points_021 is 0
+            PCT_OF_TOTAL_APPLICATIONS_POS_SOURCE, Data Point : PCT_OF_TOTAL_APPLICATIONS, for deliver table : Reporting_Deliver.data_points_016 is 0
+            PCT_OF_TOTAL_APPLICATIONS_POS_SOURCE, Data Point : PCT_OF_TOTAL_APPLICATIONS, for deliver table : Reporting_Deliver.data_points_016 is 0
+            PCT_OF_SELECTED_APPLICATONS_POS_SOURCE, Data Point : PCT_OF_SELECTED_APPLICATONS, for deliver table : Reporting_Deliver.data_points_016 is 0
+            PCT_OF_SELECTED_APPLICATONS_POS_SOURCE, Data Point : PCT_OF_SELECTED_APPLICATONS, for deliver table : Reporting_Deliver.data_points_016 is 0
+        CP-4429:- resolved conflicts
+
+26th Feb:-
+    CP-4429:-
+        foreign key constraint issue.
+
+    CP-4421:-
+
+
+    Understand ML models
+    ask shubham to correct regex in degree and specilization
+    clean_degree_specilization code can be optimized by adding courses regex and specilization regex into a tuple
+    add ctc
+    Remove common students between candidate and student tables
+    ask varun about null entries of resume_id in candidate_application
+    investigate candidates data.(check join in communities)
+
+    ask varun about candidates data in offered_calyx_data.sql
+    replace null values with ''
+
+27th feb:-
+    fixing sql queries.
+    started on model Understading in job_category_model
+    final counts:-
+        -- 12303
+        -- 12345
+        
+        -- 174825
+        -- 164436
+    Meeting with Amit sir.
+
+28th Feb:-
+    Understading Models in job_category_model branch
+
+1st March:-
+    Testing models for demo puspose
+    CP-4504:- added salary_range support
+
+4th March:-
+    Testing models for demo purpose.
+    Updated postgres
+    New db dump
+    trained models again.
+    made predictions again.
+
+5th March:-
+    investigated duplicate students in offered candidates(because one student can be placed multiple times)
+    added degree filter in get_final_results
+    investigated diff in count of all_students data in old dump and new dump
+    generated results again
+    Demo
+    Discussion with Amit sir
+
+6th March:-
+    Figuring approaches for skills nullifing
+    Discussion with Amit sir
+    Making knn per job category(clean data)
+    Discussion with Amit sir(Demo)
+    Continue on knn
+
+7th March:-
+    Fixing cleaning degree.
+    Fixed Memory Error.
+    Working on similar colleges algo.
+    mongo issue(data not showing)
+
+8th March:-
+    working on similar colleges algo(reviewing shubhams code)
+    working on tf-idf approach for job_category_model
+    metting with amit sir
+
+12th March:-
+    explored tf-idf from medium.com
+    generated results
+    results generated not so good
+        reason:- tfidf also depends on length of document
+    random sampling data
+    meeting with amit sir
+
+13th March:-
+    Review points on CP-4504 and CP-4298
+    made job category results again
+    over sampled data and made prediction on them(Not possible because tfidf in itself is trying to normalize it by trying to give more weightage to documents having less terms)
+    Understading college clustering
+    read correlation(how can we normalize our data in correlation algo we use on colleges clustering)
+    understanding PCA(ask why use PCA)
+    Understand Kmeans
+
+14th March:-
+    review point of CP-4298:-
+        place placement drive != 3 at one place
+    place status!=10 at one place(do not include it in ticket)
+    add is_active check at all places.
+
+    ask shubham about the doubt.
+
+    meeting with amit sir
+    similar colleges algo:-
+        tried StandardScaler
+    
+    meeting with Amit sir
+
+15th March:-
+    scrap entrance exams data.
+        useful links:-
+            https://engineering.careers360.com/articles/jee-main-cutoff
+    
+    use linkedin skills to improve skills set
+    improved algo
+    worked on improving tfidf approach
+
+18th March:-
+    CP-4298:- review points(unneccesay changes asked by colluge).
+    improving skill extraction from job description.
+    similar colleges approach.
+    explored tensorflow to improve similar_colleges.
+
+19th March:-
+    working on similar college algo(approach including courses, companies and job titles)
+
+20th March:-
+    worked on similar colleges algo
+        Found nan issue
+        worked on how to one hot encode large data
+    resolved issues in company reporting
+    dixcussion with amit sir
+    meeting over feedback forums
+    CP-4731:- check why data mismatch in different datapoints(acedemic group, gender, total)
+        datapoint 10, 11, 13
+
+21st March:-
+    CP-4731:- FIxed data mismatch in different datapoints(acedemic group, gender, total)
+    investigated use of stage name in data point views
+    replaced stage name with stage_id and related changes and testing
+    set up new laptop
+    read about models
+    investigated why less student in round3 then offered round(data bad from app side)
+
+22nd March:-
+    investigated why less student in round3 then offered round(data bad from app side)
+    reviewed shubham change
+    investigated primary, secondary fields for job category.
+    why different offered data in 23, 25, 28
+    why no data in 24
+    why 0-40 academic group hiring by JTG
+
+
+23rd March:-
+    to-do:-
+        why different offered data in 23, 25, 28
+					diff in 23 and 25 is because of null values
+					count in 23 :- 46
+					count in 25:- 37 + 8 null values = 44 because there are 2 repeated in 023 and in this they are in null values
+					count in 28:- 44
+        why maximum offered in PCT_40
+			  meeting with rishu sir
+        
+
+1st April:-
+		CP_4759:- why maximum offered in PCT_40 and fixed it
+		why different offered data in 23, 25, 28(22873, 21078 community_candidate_id)
+		set up new laptop
+		to-do:-
+				set up laptop
+				complete time sheet
+    to-do in future:- 
+				why different offered data in 23, 25, 28(22873, 21078 community_candidate_id)
+				add unknown college in place of null colleges
