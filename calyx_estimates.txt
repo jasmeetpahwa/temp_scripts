@@ -314,3 +314,11 @@ BEST_SOURCE_TIME_POS
 				add unknown college in place of null colleges
 		setup laptop
 		time sheet
+2nd April:-
+	setup laptop
+	debug data_point 014
+	CP-4790:-
+	CP-4787:- AttributeError: 'CollegeReporter' object has no attribute 'pre_defined_stages'
+	to-do:-
+		CP-4789:-
+		make spell checker using google
