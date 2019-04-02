@@ -22,7 +22,7 @@
     Understading AppTableImporter, test_data.py
     Resolved Conflicts
     KT
-    sql folders to cover:- 
+    sql folders to cover:-
         denormalization  DONE
         clean            DONE
         transform
@@ -150,7 +150,7 @@ BEST_SOURCE_TIME_POS
     CP-4429:-
         foreign key constraint issue.
 
-    CP-4421:-
+    CP-4412:-
 
 
     Understand ML models
@@ -179,7 +179,7 @@ BEST_SOURCE_TIME_POS
     Understading Models in job_category_model branch
 
 1st March:-
-    Testing models for demo puspose
+    Testing models for demo purpose
     CP-4504:- added salary_range support
 
 4th March:-
@@ -213,7 +213,7 @@ BEST_SOURCE_TIME_POS
 8th March:-
     working on similar colleges algo(reviewing shubhams code)
     working on tf-idf approach for job_category_model
-    metting with amit sir
+    meeting with amit sir
 
 12th March:-
     explored tf-idf from medium.com
@@ -264,7 +264,7 @@ BEST_SOURCE_TIME_POS
 19th March:-
     working on similar college algo(approach including courses, companies and job titles)
 
-20th March:-
+26th March:-
     worked on similar colleges algo
         Found nan issue
         worked on how to one hot encode large data
@@ -274,15 +274,15 @@ BEST_SOURCE_TIME_POS
     CP-4731:- check why data mismatch in different datapoints(acedemic group, gender, total)
         datapoint 10, 11, 13
 
-21st March:-
-    CP-4731:- FIxed data mismatch in different datapoints(acedemic group, gender, total)
+27th March:-
+    CP-4731:- Fixed data mismatch in different datapoints(acedemic group, gender, total)
     investigated use of stage name in data point views
     replaced stage name with stage_id and related changes and testing
     set up new laptop
     read about models
     investigated why less student in round3 then offered round(data bad from app side)
 
-22nd March:-
+28th March:-
     investigated why less student in round3 then offered round(data bad from app side)
     reviewed shubham change
     investigated primary, secondary fields for job category.
@@ -291,7 +291,7 @@ BEST_SOURCE_TIME_POS
     why 0-40 academic group hiring by JTG
 
 
-23rd March:-
+29th March:-
     to-do:-
         why different offered data in 23, 25, 28
 					diff in 23 and 25 is because of null values
