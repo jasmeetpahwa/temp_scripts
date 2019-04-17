@@ -316,9 +316,93 @@ BEST_SOURCE_TIME_POS
 		time sheet
 2nd April:-
 	setup laptop
-	debug data_point 014
-	CP-4790:-
+	CP-4790:- debug data_point 014
 	CP-4787:- AttributeError: 'CollegeReporter' object has no attribute 'pre_defined_stages'
+	read intro to ML book
 	to-do:-
 		CP-4789:-
 		make spell checker using google
+
+3rd April:-
+	CP-4789:- 
+        dependency on college reporting for running company reporting
+        figured which tables to move
+        fixed Error
+        tested changes
+        fixed reporting_raw.colleges_collegecourse in scoring algo
+        fixed more tables
+        fixed depreciated tables issue:- colleges_university
+    CP-4796:- fixed data_points_021 for OFFERED_CANDIDATES_GRADUATION
+    read intro to ML book
+
+4th April:-
+    misc discussion on similar colleges with shubham.
+    CP-4747:- added primary and secondary job category suggestions in pool recommendation.
+        cleaned data.
+        made primary secondary job fields for degree, stream
+        integrated primary, secondary job_fields in existing model
+            set up ML models in new laptop
+    sprint planning
+
+5th April:-
+    CP-4747:- added primary and secondary job category suggestions in pool recommendation
+        testing results with abhishek
+    dumped files to s3:-
+        read about how to dump files to s3
+    sync up for hackathon
+    planning with team regarding company reporting
+    KT on company reporting.
+
+to-do:-
+    make a ticket to:- fix request_approval step being called in create_weights
+
+8th April:-
+    Feedback forms self and peers.(self, saurabh, pankaj)
+    dump files to s3:-
+        tested code changes.
+        debugged .aws/credentials error
+
+9th April:-
+    explored sheet made by abhishek.
+    company_reporting:-
+        explored and documented Pentaho Mondrian.
+    worked on offered_candidates table.
+    worked on interview table.
+    discussions with team.(wbs plans)
+
+10th April:-
+    Fetching data for interview dashboard.
+    Validating data.
+
+11th April:-
+    Making fact and dimension tables for Interview datapoints.
+    Validating data.
+    meeting with team.
+
+12th April:-
+    Merged all datapoints into 1 table.
+    changes in sql scripts.
+    review changes and data validation.
+
+15th April:-
+    Meeting regarding Paper checking.
+    Minor review points.
+    Tested merger code.
+    Interview data validation.(Made charts)
+    Paper checking.
+    Discussion with team regarding data loss in existing reporting_clean.candidate_position_stage
+
+16th April:-
+    Wrote new merger with all scripts logic in one file.
+    Data Validation.
+    discussion with team regarding data issues.
+    Data duplication detection.
+    next_stage_call data issue(no of records with next_stage_call is very less.)
+
+17th April:-
+    next_stage_call data issue(no of records with next_stage_call is very less.)
+    paper checking.
+    self feedback form review.
+    mcq meeting.
+    bringing company reporting platform on a single platform.(using same clean tables)
+
