@@ -404,5 +404,7 @@ to-do:-
     paper checking.
     self feedback form review.
     mcq meeting.
-    bringing company reporting platform on a single platform.(using same clean tables)
 
+18th April:-
+    MCQ/Output questions for written round.
+    bringing company reporting platform on a single platform.(using same clean tables)
