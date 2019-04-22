@@ -408,3 +408,17 @@ to-do:-
 18th April:-
     MCQ/Output questions for written round.
     bringing company reporting platform on a single platform.(using same clean tables)
+    Data Validation.
+    Misc discussions with team.
+
+19th April:-
+    CP-4925:- 
+        Code.
+        Testing.
+    Data Validation.
+    Skills cleaning.
+
+20th April:- 
+    data validation.
+    Skills cleaning.
+        setup mongodb and indeed data.
