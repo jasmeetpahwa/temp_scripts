@@ -418,7 +418,29 @@ to-do:-
     Data Validation.
     Skills cleaning.
 
-20th April:- 
+22nd April:- 
     data validation.
+        interview_date
+        boards data
     Skills cleaning.
         setup mongodb and indeed data.
+        extract skills from indeed_v6
+    CP-4412:-
+        Review Points.
+    Fixed create/replace function in db_connection.py
+
+23rd April:-
+    Skill cleaning.
+	fuzzywuzzy.
+	Decision tree based approach.
+    Misc discussion with team.
+    mcq discussion.
+
+24th April:-
+    skill cleaning optimization and tring other techniques.
+    combining skill cleaning with tfidf.
+    Updated engagement reports:-
+	understood report
+	changes sql, excel, python
+	tested changes
+    KT
