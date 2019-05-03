@@ -437,10 +437,48 @@ to-do:-
     mcq discussion.
 
 24th April:-
-    skill cleaning optimization and tring other techniques.
+    Verification of algo and cleaning.
+    skill cleaning optimization and trying other techniques.
     combining skill cleaning with tfidf.
     Updated engagement reports:-
 	understood report
 	changes sql, excel, python
 	tested changes
+	Validated Changes
     KT
+
+25th April:-
+    skills_cleaning:-
+    	skill cleaning optimization and trying other techniques.
+    	combining skill cleaning with tfidf to priortize results.(Stemming and Lemmatization using nltk && can use tfidf to rank)
+    	Verification of algo and cleaning.
+    CP-5003:- Review Points.
+	
+26th April:-
+    Skills_cleaning:-
+	skill cleaning testing/validation of results.
+        iteration_2:- ranking of top results(5 or 3 results).
+
+30th April:-
+   Skills cleaning:-
+	Ranking of top results.
+	tuning of ratios.
+	updated partial ratio in fuzzywuzzy.
+	team meeting and discussion.
+	Finalizing code.
+
+1st May:-
+    updated partial ratio in fuzzywuzzy.
+    code cleaning.
+
+2nd May:-
+    result verifications.
+    CP-5066:- 
+	can use:-
+	    A value from another closely related record.
+	    A value estimated by another predictive model.
+    misc discussions.
+
+3rd May:-
+    CP-5066:-
+	verified validity of solution.
