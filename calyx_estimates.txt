@@ -482,3 +482,12 @@ to-do:-
 3rd May:-
     CP-5066:-
 	verified validity of solution.
+	how does it work.
+	how to improve results.
+    misc discussions on dbtos3.
+    mcq meeting.
+
+6th May:-
+    CP-5066:-
+	Improving results.
+    which is better psql or python to import big csvs into database.
