@@ -473,7 +473,7 @@ to-do:-
 
 2nd May:-
     result verifications.
-    CP-5066:- 
+    CP-5066:-
 	can use:-
 	    A value from another closely related record.
 	    A value estimated by another predictive model.
@@ -491,3 +491,68 @@ to-do:-
     CP-5066:-
 	Improving results.
     which is better psql or python to import big csvs into database.
+    code review
+    CP-5133:- fixed engagement reports.
+
+7th May:-
+    CP-5133:- fixed engagement reports.
+    Time sheet.
+    inivestigated diff in processing power taken when used copy command of sql vs dataframe of python to load a csv file to db.
+    discussion with abhishek on loading data into chunks vs using psql command.
+    sprint planning.
+    Made functions in db_connection.py for importing/exporting large data
+
+8th May:-
+    Made functions in db_connection.py for importing/exporting large data
+    made import function and testing.
+    made export function and testing.(found ways to export large files.)
+
+9th May:-
+    tested export function.
+    tested import function.
+    updated dbtos3.py code.
+    tested db_to_s3.py changes.
+    handling missing values in training data.(explored MICE algo to impute missing data)
+    analyzed knn results.
+    a way to bypass memory error.
+
+10th May:-
+    Missing values result discussion with Abhishek.
+    Drive Recommendation data analyzing.
+	Helpful Links:-
+	    https://www.goodworklabs.com/travel-recommendation-engine-ai-models/
+    	    https://www.hindawi.com/journals/cin/2016/1291358/
+    kmeans and haversine distance.
+    collect different location codes.
+	Discussion on 2 approaches:-
+	    make clusters based on company centroids.
+            make clusters based on other factors(ranking, location, numbre of colleges).
+
+13th May:-
+    Drive Recommendation:-
+	collecting geocodes to test.
+	    made google api_key(2 Hour.)
+    MCQ and output questions.
+    MCQ meeting.
+	(Reviewed ankurs mcq and output questions)
+	got questions reviewed.
+    discussion with team on recruitment questions.
+
+14th May:-
+    made output_questions(1 hour)
+    clustering colleges(reading and implementing)
+	tring agglomerative heirarchical clustering with some modifications.(modifications to include count.)
+    Understood scikit_learns' hierarchical.py to make modifications into it
+    setup python3 to include distance_threshold
+	try college_density
+    segmenting results
+
+15th May:-
+    clustering based on count in colleges.
+    mcq meeting
+    try neural networks.
+    can recommend multiple pools even with less candidates then required.
+    can skip non 
+
+    to-do:-
+	clean skills cleaning scripts.
