@@ -554,9 +554,6 @@ to-do:-
     can recommend multiple pools even with less candidates then required.
     can skip non 
 
-    to-do:-
-	clean skills cleaning scripts.
-
 16th may:-
     clustering count based.
 
@@ -565,3 +562,22 @@ to-do:-
 
 20th May:-
     clustering count based
+    review points of CP-4412
+    review points of CP-5043
+
+21st May:-
+    review points of CP-5043
+    resolved python package issue.
+    resolved unicode decode error.
+    manually cleaned all skills file for non ascii chars
+    wrote wrapper to incrementally import files from s3 to db.
+    sprint planning.
+
+22nd May:-
+    CP-5248:-
+	added wrapper function for incremental import.
+        tested wrapper function.
+	import wrapper to import all types of files.
+   CP-5252:-
+	set up aws and synced data folder.
+        
