@@ -563,8 +563,7 @@ to-do:-
 20th May:-
     clustering count based
     review points of CP-4412
-    review points of CP-5043
-
+    review points of CP-5043x si
 21st May:-
     review points of CP-5043
     resolved python package issue.
@@ -580,4 +579,35 @@ to-do:-
 	import wrapper to import all types of files.
    CP-5252:-
 	set up aws and synced data folder.
-        
+	coded whole thing
+
+23rd May:-
+    Team Retro.
+    CP-5252:-
+    CP-5247:-
+
+24th May:-
+    CP-5247:- Figured when to replace null values and when not to.(max how many values can predict missing values.)
+	Figuring where to put missing values code. As ideally it should be placed in calyx side.
+	tried various combinations to predict missing values.
+	implemented code for finding missing values.
+
+27th May:-
+    CP-5247:- Implementing code. and review points.
+    CP-5249:- the offers has been made for different offer jobs ids.
+
+28th May:-
+    (fixed offered data query)CP-5249:-
+    (missing_values)CP-5247:- review fixes.
+    made demo results.
+    CP-4412:- review changes.
+    CP-5309:-
+
+29th May:-
+    CP-5309:- Understanding metric.py
+    figuring ways to incorporate and/or in metrics.py
+    figured all the cases of where condition.
+
+30th may:-
+    CP-5309:- implementing code
+    Prepared results with new data.
