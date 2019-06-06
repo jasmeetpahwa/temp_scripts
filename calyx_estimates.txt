@@ -611,3 +611,30 @@ to-do:-
 30th may:-
     CP-5309:- implementing code
     Prepared results with new data.
+    CP-5251:- 
+
+3rd June:-
+    CP-xxxx:- Improve drive recommendation results.
+	Removed cluster_on_count function call.
+
+    Explored more clustering algos.
+    DBSCAN and OPTICS.
+    Paper checking. 1 Hour
+
+4th June:-
+    CP-xxxx:- Improve drive recommendation results.
+	CLustering only on the basis of distance and stopping on count.
+    CP-5309:- Review Points.
+    Meeting with Rishu Sir.
+    Team Meet.
+
+5th June:-
+    Team meet.
+    Decide work.
+    Investigated careers360.com for data scraping.
+    Task defining.
+    Meeting with Rishu sir.
+    Sprint plan with team.
+
+6th June:-
+    
