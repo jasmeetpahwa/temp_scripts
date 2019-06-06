@@ -1,0 +1,11 @@
+My sprint Plan:
+Will be done after data standardization and in parallel to data Enrichment.
+    Reserve one day for question thinking and just do that. And categorize those questions into Easy, Medium, Hard, Very Hard, Complex.
+Scoping:- Set Phases for the chat bot according to difficulty level.
+
+June Goals:-
+Data Standardization.
+Data(company and college) Enrichment scoping and chatbot scoping.(Make use of linkedin by searching students data colleges wise.)
+Data Enrichment.
+College reporting.
+
