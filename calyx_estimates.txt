@@ -645,10 +645,10 @@ to-do:-
 	Mark skills to delete and their new names in batches.
 
 8th June:-
-    CP-5392:- 
+    CP-5392:-
 	Stuck on an error.(Problem was for each skill i have to move file pointer to the start of the file.)
     Tasks to do:-
-        Make a list of verified skills.
+        Make a list of verified skills.Done
 	Cluster skills with are equal in case insensitive.(make a dict) Done
         Break skills on comma and output a array.(Handled multiple skills in a line.)(dont do anything in that case.)Done
 	run script on skills in bathces.
