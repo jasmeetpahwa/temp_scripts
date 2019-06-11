@@ -652,4 +652,11 @@ to-do:-
 	Cluster skills with are equal in case insensitive.(make a dict) Done
         Break skills on comma and output a array.(Handled multiple skills in a line.)(dont do anything in that case.)Done
 	run script on skills in bathces.
+        Manually verify verified skills.
+
+9th June:-
+    CP-5392:-
+	run script on skills in bathces.
+        Manually verify verified skills.(Done)
+	Remove duplicate data from list.(Done)
 
