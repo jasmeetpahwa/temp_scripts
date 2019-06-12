@@ -644,7 +644,7 @@ to-do:-
 	Make a list with verified skills.
 	Mark skills to delete and their new names in batches.
 
-8th June:-
+10th June:-
     CP-5392:-
 	Stuck on an error.(Problem was for each skill i have to move file pointer to the start of the file.)
     Tasks to do:-
@@ -654,9 +654,16 @@ to-do:-
 	run script on skills in bathces.
         Manually verify verified skills.
 
-9th June:-
+11th June:-
     CP-5392:-
-	run script on skills in bathces.
+	run script on skills in bathces.(Done)
         Manually verify verified skills.(Done)
 	Remove duplicate data from list.(Done)
+
+    Commit neat code in calyx repo
+    sprint planning.
+
+12th June:- 
+    Commit neat code in calyx repo.
+    CP-5447:- Find standardized list of boards
 
