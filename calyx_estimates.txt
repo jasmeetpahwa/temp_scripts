@@ -666,4 +666,70 @@ to-do:-
 12th June:- 
     Commit neat code in calyx repo.
     CP-5447:- Find standardized list of boards
+	Find list of school boards.
+	Find list of diploma boards.
+	It is assisted by 10 Statutory Boards of Studies, namely, UG Studies in Eng. & Tech., PG and Research in Eng. and Tech., Management Studies, 		Vocational Education, Technical Education, Pharmaceutical Education, Architecture, Hotel Management and Catering Technology, Information 		Technology, Town and Country Planning.
+
+13th June:-
+   CP-5447:-
+	made sheet of verified school boards.(Mark extra boards as verified.)
+	made sheet of verified diploma boards.
+
+14th June:-
+	make sheet of verified diploma boards.
+	to-do:-
+		Make sprint plan for college reporting.
+		Explore college scrapping.
+
+17th June:-
+	Chat bot questions
+	review each other questions
+	web scrapping:-
+		intro
+		install and set selenium with chromium driver.
+
+18th June:-
+	scrapper how to.
+	LinkedIn data scrapper.
+	explored inspecting elements.
+	scrapped ymca students data.
+
+20th June:-
+	Finalize skill cleaning code.(Done)
+	change req.txt in calyx.(add fuzzywuzzy, nltk)
+	meeting with rishu sir.(Done)
+	Try to scrap data from linkedin.
+
+21st June:-
+	change req.txt in calyx.(add fuzzywuzzy, nltk)
+	Try scrap data from linkedIn.
+		tried scrapping through simple getting page from a url.
+	Investigate different ways to scrape data from web.
+	scrape college ratings from web.
+
+24th June:-
+	college data scrapping(do within 4 hours.)
+
+25th June:-
+	doing previous sprints pending tickets.
+		Gave PR for skill cleaning.
+	to-do:-
+		Finalized db to s3 code.
+	CP-5633:-
+		Company names cleaning
+	Meeting with Amit sir.
+
+26th June:- 
+	CP-5633:-
+		Company names cleaning.
+		to do:-
+			Make robust cleaning structure.
+				store results in a file.
+				start from a particular chunk.
+				store actual uncleaned value in dict
+	meeting with amit sir and rishu sir
+	discussion with team.
+
+27th June:-
+	CP-5674:- Manully verify all skills
 
